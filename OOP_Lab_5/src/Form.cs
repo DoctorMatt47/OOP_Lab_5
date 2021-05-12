@@ -33,18 +33,21 @@ namespace OOP_Lab_5
 
         private void Form_MouseMove(object sender, MouseEventArgs e)
         {
-            if (_mouseDown)
-            {
-                Location = new Point(
-                    (Location.X - _lastLocation.X) + e.X, (Location.Y - _lastLocation.Y) + e.Y);
-
-                Update();
-            }
+            if (!_mouseDown) return;
+            Location = new Point(
+                (Location.X - _lastLocation.X) + e.X, (Location.Y - _lastLocation.Y) + e.Y);
+            Update();
         }
 
         private void Form_MouseUp(object sender, MouseEventArgs e)
         {
             _mouseDown = false;
+        }
+
+        private void sizeList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var index = sizeList.SelectedIndex;
+
         }
     }
 }
