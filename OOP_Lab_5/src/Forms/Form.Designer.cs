@@ -535,326 +535,254 @@ namespace OOP_Lab_5
             // matrix155
             // 
             this.matrix155.Location = new System.Drawing.Point(302, 164);
-            this.matrix155.Mask = "000";
             this.matrix155.Name = "matrix155";
             this.matrix155.Size = new System.Drawing.Size(50, 23);
             this.matrix155.TabIndex = 35;
-            this.matrix155.ValidatingType = typeof(int);
             // 
             // matrix154
             // 
             this.matrix154.Location = new System.Drawing.Point(246, 164);
-            this.matrix154.Mask = "000";
             this.matrix154.Name = "matrix154";
             this.matrix154.Size = new System.Drawing.Size(50, 23);
             this.matrix154.TabIndex = 34;
-            this.matrix154.ValidatingType = typeof(int);
             // 
             // matrix153
             // 
             this.matrix153.Location = new System.Drawing.Point(190, 164);
-            this.matrix153.Mask = "000";
             this.matrix153.Name = "matrix153";
             this.matrix153.Size = new System.Drawing.Size(50, 23);
             this.matrix153.TabIndex = 33;
-            this.matrix153.ValidatingType = typeof(int);
             // 
             // matrix152
             // 
             this.matrix152.Location = new System.Drawing.Point(134, 164);
-            this.matrix152.Mask = "000";
             this.matrix152.Name = "matrix152";
             this.matrix152.Size = new System.Drawing.Size(50, 23);
             this.matrix152.TabIndex = 32;
-            this.matrix152.ValidatingType = typeof(int);
             // 
             // matrix150
             // 
             this.matrix150.Location = new System.Drawing.Point(22, 164);
-            this.matrix150.Mask = "000";
             this.matrix150.Name = "matrix150";
             this.matrix150.Size = new System.Drawing.Size(50, 23);
             this.matrix150.TabIndex = 31;
-            this.matrix150.ValidatingType = typeof(int);
             // 
             // matrix151
             // 
             this.matrix151.Location = new System.Drawing.Point(78, 164);
-            this.matrix151.Mask = "000";
             this.matrix151.Name = "matrix151";
             this.matrix151.Size = new System.Drawing.Size(50, 23);
             this.matrix151.TabIndex = 30;
-            this.matrix151.ValidatingType = typeof(int);
             // 
             // matrix145
             // 
             this.matrix145.Location = new System.Drawing.Point(302, 135);
-            this.matrix145.Mask = "000";
             this.matrix145.Name = "matrix145";
             this.matrix145.Size = new System.Drawing.Size(50, 23);
             this.matrix145.TabIndex = 29;
-            this.matrix145.ValidatingType = typeof(int);
             // 
             // matrix144
             // 
             this.matrix144.Location = new System.Drawing.Point(246, 135);
-            this.matrix144.Mask = "000";
             this.matrix144.Name = "matrix144";
             this.matrix144.Size = new System.Drawing.Size(50, 23);
             this.matrix144.TabIndex = 28;
-            this.matrix144.ValidatingType = typeof(int);
             // 
             // matrix135
             // 
             this.matrix135.Location = new System.Drawing.Point(302, 106);
-            this.matrix135.Mask = "000";
             this.matrix135.Name = "matrix135";
             this.matrix135.Size = new System.Drawing.Size(50, 23);
             this.matrix135.TabIndex = 27;
-            this.matrix135.ValidatingType = typeof(int);
             // 
             // matrix134
             // 
             this.matrix134.Location = new System.Drawing.Point(246, 106);
-            this.matrix134.Mask = "000";
             this.matrix134.Name = "matrix134";
             this.matrix134.Size = new System.Drawing.Size(50, 23);
             this.matrix134.TabIndex = 26;
-            this.matrix134.ValidatingType = typeof(int);
             // 
             // matrix143
             // 
             this.matrix143.Location = new System.Drawing.Point(190, 135);
-            this.matrix143.Mask = "000";
             this.matrix143.Name = "matrix143";
             this.matrix143.Size = new System.Drawing.Size(50, 23);
             this.matrix143.TabIndex = 25;
-            this.matrix143.ValidatingType = typeof(int);
             // 
             // matrix142
             // 
             this.matrix142.Location = new System.Drawing.Point(134, 135);
-            this.matrix142.Mask = "000";
             this.matrix142.Name = "matrix142";
             this.matrix142.Size = new System.Drawing.Size(50, 23);
             this.matrix142.TabIndex = 24;
-            this.matrix142.ValidatingType = typeof(int);
             // 
             // matrix133
             // 
             this.matrix133.Location = new System.Drawing.Point(190, 106);
-            this.matrix133.Mask = "000";
             this.matrix133.Name = "matrix133";
             this.matrix133.Size = new System.Drawing.Size(50, 23);
             this.matrix133.TabIndex = 23;
-            this.matrix133.ValidatingType = typeof(int);
             // 
             // matrix132
             // 
             this.matrix132.Location = new System.Drawing.Point(134, 106);
-            this.matrix132.Mask = "000";
             this.matrix132.Name = "matrix132";
             this.matrix132.Size = new System.Drawing.Size(50, 23);
             this.matrix132.TabIndex = 22;
-            this.matrix132.ValidatingType = typeof(int);
             // 
             // matrix141
             // 
             this.matrix141.Location = new System.Drawing.Point(78, 135);
-            this.matrix141.Mask = "000";
             this.matrix141.Name = "matrix141";
             this.matrix141.Size = new System.Drawing.Size(50, 23);
             this.matrix141.TabIndex = 21;
-            this.matrix141.ValidatingType = typeof(int);
             // 
             // matrix140
             // 
             this.matrix140.Location = new System.Drawing.Point(22, 135);
-            this.matrix140.Mask = "000";
             this.matrix140.Name = "matrix140";
             this.matrix140.Size = new System.Drawing.Size(50, 23);
             this.matrix140.TabIndex = 20;
-            this.matrix140.ValidatingType = typeof(int);
             // 
             // matrix131
             // 
             this.matrix131.Location = new System.Drawing.Point(78, 106);
-            this.matrix131.Mask = "000";
             this.matrix131.Name = "matrix131";
             this.matrix131.Size = new System.Drawing.Size(50, 23);
             this.matrix131.TabIndex = 19;
-            this.matrix131.ValidatingType = typeof(int);
             // 
             // matrix130
             // 
             this.matrix130.Location = new System.Drawing.Point(22, 106);
-            this.matrix130.Mask = "000";
             this.matrix130.Name = "matrix130";
             this.matrix130.Size = new System.Drawing.Size(50, 23);
             this.matrix130.TabIndex = 18;
-            this.matrix130.ValidatingType = typeof(int);
             // 
             // matrix123
             // 
             this.matrix123.Location = new System.Drawing.Point(190, 77);
-            this.matrix123.Mask = "000";
             this.matrix123.Name = "matrix123";
             this.matrix123.Size = new System.Drawing.Size(50, 23);
             this.matrix123.TabIndex = 17;
-            this.matrix123.ValidatingType = typeof(int);
             // 
             // matrix124
             // 
             this.matrix124.Location = new System.Drawing.Point(246, 77);
-            this.matrix124.Mask = "000";
             this.matrix124.Name = "matrix124";
             this.matrix124.Size = new System.Drawing.Size(50, 23);
             this.matrix124.TabIndex = 16;
-            this.matrix124.ValidatingType = typeof(int);
             // 
             // matrix125
             // 
             this.matrix125.Location = new System.Drawing.Point(302, 77);
-            this.matrix125.Mask = "000";
             this.matrix125.Name = "matrix125";
             this.matrix125.Size = new System.Drawing.Size(50, 23);
             this.matrix125.TabIndex = 15;
-            this.matrix125.ValidatingType = typeof(int);
             // 
             // matrix115
             // 
             this.matrix115.Location = new System.Drawing.Point(302, 48);
-            this.matrix115.Mask = "000";
             this.matrix115.Name = "matrix115";
             this.matrix115.Size = new System.Drawing.Size(50, 23);
             this.matrix115.TabIndex = 14;
-            this.matrix115.ValidatingType = typeof(int);
             // 
             // matrix105
             // 
             this.matrix105.Location = new System.Drawing.Point(302, 19);
-            this.matrix105.Mask = "000";
             this.matrix105.Name = "matrix105";
             this.matrix105.Size = new System.Drawing.Size(50, 23);
             this.matrix105.TabIndex = 13;
-            this.matrix105.ValidatingType = typeof(int);
             // 
             // matrix114
             // 
             this.matrix114.Location = new System.Drawing.Point(246, 48);
-            this.matrix114.Mask = "000";
             this.matrix114.Name = "matrix114";
             this.matrix114.Size = new System.Drawing.Size(50, 23);
             this.matrix114.TabIndex = 12;
-            this.matrix114.ValidatingType = typeof(int);
             // 
             // matrix113
             // 
             this.matrix113.Location = new System.Drawing.Point(190, 48);
-            this.matrix113.Mask = "000";
             this.matrix113.Name = "matrix113";
             this.matrix113.Size = new System.Drawing.Size(50, 23);
             this.matrix113.TabIndex = 11;
-            this.matrix113.ValidatingType = typeof(int);
             // 
             // matrix104
             // 
             this.matrix104.Location = new System.Drawing.Point(246, 19);
-            this.matrix104.Mask = "000";
             this.matrix104.Name = "matrix104";
             this.matrix104.Size = new System.Drawing.Size(50, 23);
             this.matrix104.TabIndex = 10;
-            this.matrix104.ValidatingType = typeof(int);
             // 
             // matrix103
             // 
             this.matrix103.Location = new System.Drawing.Point(190, 19);
-            this.matrix103.Mask = "000";
             this.matrix103.Name = "matrix103";
             this.matrix103.Size = new System.Drawing.Size(50, 23);
             this.matrix103.TabIndex = 9;
-            this.matrix103.ValidatingType = typeof(int);
             // 
             // matrix120
             // 
             this.matrix120.Location = new System.Drawing.Point(22, 77);
-            this.matrix120.Mask = "000";
             this.matrix120.Name = "matrix120";
             this.matrix120.Size = new System.Drawing.Size(50, 23);
             this.matrix120.TabIndex = 8;
-            this.matrix120.ValidatingType = typeof(int);
             // 
             // matrix121
             // 
             this.matrix121.Location = new System.Drawing.Point(78, 77);
-            this.matrix121.Mask = "000";
             this.matrix121.Name = "matrix121";
             this.matrix121.Size = new System.Drawing.Size(50, 23);
             this.matrix121.TabIndex = 7;
-            this.matrix121.ValidatingType = typeof(int);
             // 
             // matrix122
             // 
             this.matrix122.Location = new System.Drawing.Point(134, 77);
-            this.matrix122.Mask = "000";
             this.matrix122.Name = "matrix122";
             this.matrix122.Size = new System.Drawing.Size(50, 23);
             this.matrix122.TabIndex = 6;
-            this.matrix122.ValidatingType = typeof(int);
             // 
             // matrix112
             // 
             this.matrix112.Location = new System.Drawing.Point(134, 48);
-            this.matrix112.Mask = "000";
             this.matrix112.Name = "matrix112";
             this.matrix112.Size = new System.Drawing.Size(50, 23);
             this.matrix112.TabIndex = 5;
-            this.matrix112.ValidatingType = typeof(int);
             // 
             // matrix102
             // 
             this.matrix102.Location = new System.Drawing.Point(134, 19);
-            this.matrix102.Mask = "000";
             this.matrix102.Name = "matrix102";
             this.matrix102.Size = new System.Drawing.Size(50, 23);
             this.matrix102.TabIndex = 4;
-            this.matrix102.ValidatingType = typeof(int);
             // 
             // matrix111
             // 
             this.matrix111.Location = new System.Drawing.Point(78, 48);
-            this.matrix111.Mask = "000";
             this.matrix111.Name = "matrix111";
             this.matrix111.Size = new System.Drawing.Size(50, 23);
             this.matrix111.TabIndex = 3;
-            this.matrix111.ValidatingType = typeof(int);
             // 
             // matrix110
             // 
             this.matrix110.Location = new System.Drawing.Point(22, 48);
-            this.matrix110.Mask = "000";
             this.matrix110.Name = "matrix110";
             this.matrix110.Size = new System.Drawing.Size(50, 23);
             this.matrix110.TabIndex = 2;
-            this.matrix110.ValidatingType = typeof(int);
             // 
             // matrix101
             // 
             this.matrix101.Location = new System.Drawing.Point(78, 19);
-            this.matrix101.Mask = "000";
             this.matrix101.Name = "matrix101";
             this.matrix101.Size = new System.Drawing.Size(50, 23);
             this.matrix101.TabIndex = 1;
-            this.matrix101.ValidatingType = typeof(int);
             // 
             // matrix100
             // 
             this.matrix100.Location = new System.Drawing.Point(22, 19);
-            this.matrix100.Mask = "000";
             this.matrix100.Name = "matrix100";
             this.matrix100.Size = new System.Drawing.Size(50, 23);
             this.matrix100.TabIndex = 0;
-            this.matrix100.ValidatingType = typeof(int);
             // 
             // panel3
             // 
@@ -903,326 +831,254 @@ namespace OOP_Lab_5
             // matrix255
             // 
             this.matrix255.Location = new System.Drawing.Point(302, 164);
-            this.matrix255.Mask = "000";
             this.matrix255.Name = "matrix255";
             this.matrix255.Size = new System.Drawing.Size(50, 23);
             this.matrix255.TabIndex = 35;
-            this.matrix255.ValidatingType = typeof(int);
             // 
             // matrix254
             // 
             this.matrix254.Location = new System.Drawing.Point(246, 164);
-            this.matrix254.Mask = "000";
             this.matrix254.Name = "matrix254";
             this.matrix254.Size = new System.Drawing.Size(50, 23);
             this.matrix254.TabIndex = 34;
-            this.matrix254.ValidatingType = typeof(int);
             // 
             // matrix253
             // 
             this.matrix253.Location = new System.Drawing.Point(190, 164);
-            this.matrix253.Mask = "000";
             this.matrix253.Name = "matrix253";
             this.matrix253.Size = new System.Drawing.Size(50, 23);
             this.matrix253.TabIndex = 33;
-            this.matrix253.ValidatingType = typeof(int);
             // 
             // matrix252
             // 
             this.matrix252.Location = new System.Drawing.Point(134, 164);
-            this.matrix252.Mask = "000";
             this.matrix252.Name = "matrix252";
             this.matrix252.Size = new System.Drawing.Size(50, 23);
             this.matrix252.TabIndex = 32;
-            this.matrix252.ValidatingType = typeof(int);
             // 
             // matrix250
             // 
             this.matrix250.Location = new System.Drawing.Point(22, 164);
-            this.matrix250.Mask = "000";
             this.matrix250.Name = "matrix250";
             this.matrix250.Size = new System.Drawing.Size(50, 23);
             this.matrix250.TabIndex = 31;
-            this.matrix250.ValidatingType = typeof(int);
             // 
             // matrix251
             // 
             this.matrix251.Location = new System.Drawing.Point(78, 164);
-            this.matrix251.Mask = "000";
             this.matrix251.Name = "matrix251";
             this.matrix251.Size = new System.Drawing.Size(50, 23);
             this.matrix251.TabIndex = 30;
-            this.matrix251.ValidatingType = typeof(int);
             // 
             // matrix245
             // 
             this.matrix245.Location = new System.Drawing.Point(302, 135);
-            this.matrix245.Mask = "000";
             this.matrix245.Name = "matrix245";
             this.matrix245.Size = new System.Drawing.Size(50, 23);
             this.matrix245.TabIndex = 29;
-            this.matrix245.ValidatingType = typeof(int);
             // 
             // matrix244
             // 
             this.matrix244.Location = new System.Drawing.Point(246, 135);
-            this.matrix244.Mask = "000";
             this.matrix244.Name = "matrix244";
             this.matrix244.Size = new System.Drawing.Size(50, 23);
             this.matrix244.TabIndex = 28;
-            this.matrix244.ValidatingType = typeof(int);
             // 
             // matrix235
             // 
             this.matrix235.Location = new System.Drawing.Point(302, 106);
-            this.matrix235.Mask = "000";
             this.matrix235.Name = "matrix235";
             this.matrix235.Size = new System.Drawing.Size(50, 23);
             this.matrix235.TabIndex = 27;
-            this.matrix235.ValidatingType = typeof(int);
             // 
             // matrix234
             // 
             this.matrix234.Location = new System.Drawing.Point(246, 106);
-            this.matrix234.Mask = "000";
             this.matrix234.Name = "matrix234";
             this.matrix234.Size = new System.Drawing.Size(50, 23);
             this.matrix234.TabIndex = 26;
-            this.matrix234.ValidatingType = typeof(int);
             // 
             // matrix243
             // 
             this.matrix243.Location = new System.Drawing.Point(190, 135);
-            this.matrix243.Mask = "000";
             this.matrix243.Name = "matrix243";
             this.matrix243.Size = new System.Drawing.Size(50, 23);
             this.matrix243.TabIndex = 25;
-            this.matrix243.ValidatingType = typeof(int);
             // 
             // matrix242
             // 
             this.matrix242.Location = new System.Drawing.Point(134, 135);
-            this.matrix242.Mask = "000";
             this.matrix242.Name = "matrix242";
             this.matrix242.Size = new System.Drawing.Size(50, 23);
             this.matrix242.TabIndex = 24;
-            this.matrix242.ValidatingType = typeof(int);
             // 
             // matrix233
             // 
             this.matrix233.Location = new System.Drawing.Point(190, 106);
-            this.matrix233.Mask = "000";
             this.matrix233.Name = "matrix233";
             this.matrix233.Size = new System.Drawing.Size(50, 23);
             this.matrix233.TabIndex = 23;
-            this.matrix233.ValidatingType = typeof(int);
             // 
             // matrix232
             // 
             this.matrix232.Location = new System.Drawing.Point(134, 106);
-            this.matrix232.Mask = "000";
             this.matrix232.Name = "matrix232";
             this.matrix232.Size = new System.Drawing.Size(50, 23);
             this.matrix232.TabIndex = 22;
-            this.matrix232.ValidatingType = typeof(int);
             // 
             // matrix241
             // 
             this.matrix241.Location = new System.Drawing.Point(78, 135);
-            this.matrix241.Mask = "000";
             this.matrix241.Name = "matrix241";
             this.matrix241.Size = new System.Drawing.Size(50, 23);
             this.matrix241.TabIndex = 21;
-            this.matrix241.ValidatingType = typeof(int);
             // 
             // matrix240
             // 
             this.matrix240.Location = new System.Drawing.Point(22, 135);
-            this.matrix240.Mask = "000";
             this.matrix240.Name = "matrix240";
             this.matrix240.Size = new System.Drawing.Size(50, 23);
             this.matrix240.TabIndex = 20;
-            this.matrix240.ValidatingType = typeof(int);
             // 
             // matrix231
             // 
             this.matrix231.Location = new System.Drawing.Point(78, 106);
-            this.matrix231.Mask = "000";
             this.matrix231.Name = "matrix231";
             this.matrix231.Size = new System.Drawing.Size(50, 23);
             this.matrix231.TabIndex = 19;
-            this.matrix231.ValidatingType = typeof(int);
             // 
             // matrix230
             // 
             this.matrix230.Location = new System.Drawing.Point(22, 106);
-            this.matrix230.Mask = "000";
             this.matrix230.Name = "matrix230";
             this.matrix230.Size = new System.Drawing.Size(50, 23);
             this.matrix230.TabIndex = 18;
-            this.matrix230.ValidatingType = typeof(int);
             // 
             // matrix223
             // 
             this.matrix223.Location = new System.Drawing.Point(190, 77);
-            this.matrix223.Mask = "000";
             this.matrix223.Name = "matrix223";
             this.matrix223.Size = new System.Drawing.Size(50, 23);
             this.matrix223.TabIndex = 17;
-            this.matrix223.ValidatingType = typeof(int);
             // 
             // matrix224
             // 
             this.matrix224.Location = new System.Drawing.Point(246, 77);
-            this.matrix224.Mask = "000";
             this.matrix224.Name = "matrix224";
             this.matrix224.Size = new System.Drawing.Size(50, 23);
             this.matrix224.TabIndex = 16;
-            this.matrix224.ValidatingType = typeof(int);
             // 
             // matrix225
             // 
             this.matrix225.Location = new System.Drawing.Point(302, 77);
-            this.matrix225.Mask = "000";
             this.matrix225.Name = "matrix225";
             this.matrix225.Size = new System.Drawing.Size(50, 23);
             this.matrix225.TabIndex = 15;
-            this.matrix225.ValidatingType = typeof(int);
             // 
             // matrix215
             // 
             this.matrix215.Location = new System.Drawing.Point(302, 48);
-            this.matrix215.Mask = "000";
             this.matrix215.Name = "matrix215";
             this.matrix215.Size = new System.Drawing.Size(50, 23);
             this.matrix215.TabIndex = 14;
-            this.matrix215.ValidatingType = typeof(int);
             // 
             // matrix205
             // 
             this.matrix205.Location = new System.Drawing.Point(302, 19);
-            this.matrix205.Mask = "000";
             this.matrix205.Name = "matrix205";
             this.matrix205.Size = new System.Drawing.Size(50, 23);
             this.matrix205.TabIndex = 13;
-            this.matrix205.ValidatingType = typeof(int);
             // 
             // matrix214
             // 
             this.matrix214.Location = new System.Drawing.Point(246, 48);
-            this.matrix214.Mask = "000";
             this.matrix214.Name = "matrix214";
             this.matrix214.Size = new System.Drawing.Size(50, 23);
             this.matrix214.TabIndex = 12;
-            this.matrix214.ValidatingType = typeof(int);
             // 
             // matrix213
             // 
             this.matrix213.Location = new System.Drawing.Point(190, 48);
-            this.matrix213.Mask = "000";
             this.matrix213.Name = "matrix213";
             this.matrix213.Size = new System.Drawing.Size(50, 23);
             this.matrix213.TabIndex = 11;
-            this.matrix213.ValidatingType = typeof(int);
             // 
             // matrix204
             // 
             this.matrix204.Location = new System.Drawing.Point(246, 19);
-            this.matrix204.Mask = "000";
             this.matrix204.Name = "matrix204";
             this.matrix204.Size = new System.Drawing.Size(50, 23);
             this.matrix204.TabIndex = 10;
-            this.matrix204.ValidatingType = typeof(int);
             // 
             // matrix203
             // 
             this.matrix203.Location = new System.Drawing.Point(190, 19);
-            this.matrix203.Mask = "000";
             this.matrix203.Name = "matrix203";
             this.matrix203.Size = new System.Drawing.Size(50, 23);
             this.matrix203.TabIndex = 9;
-            this.matrix203.ValidatingType = typeof(int);
             // 
             // matrix220
             // 
             this.matrix220.Location = new System.Drawing.Point(22, 77);
-            this.matrix220.Mask = "000";
             this.matrix220.Name = "matrix220";
             this.matrix220.Size = new System.Drawing.Size(50, 23);
             this.matrix220.TabIndex = 8;
-            this.matrix220.ValidatingType = typeof(int);
             // 
             // matrix221
             // 
             this.matrix221.Location = new System.Drawing.Point(78, 77);
-            this.matrix221.Mask = "000";
             this.matrix221.Name = "matrix221";
             this.matrix221.Size = new System.Drawing.Size(50, 23);
             this.matrix221.TabIndex = 7;
-            this.matrix221.ValidatingType = typeof(int);
             // 
             // matrix222
             // 
             this.matrix222.Location = new System.Drawing.Point(134, 77);
-            this.matrix222.Mask = "000";
             this.matrix222.Name = "matrix222";
             this.matrix222.Size = new System.Drawing.Size(50, 23);
             this.matrix222.TabIndex = 6;
-            this.matrix222.ValidatingType = typeof(int);
             // 
             // matrix212
             // 
             this.matrix212.Location = new System.Drawing.Point(134, 48);
-            this.matrix212.Mask = "000";
             this.matrix212.Name = "matrix212";
             this.matrix212.Size = new System.Drawing.Size(50, 23);
             this.matrix212.TabIndex = 5;
-            this.matrix212.ValidatingType = typeof(int);
             // 
             // matrix202
             // 
             this.matrix202.Location = new System.Drawing.Point(134, 19);
-            this.matrix202.Mask = "000";
             this.matrix202.Name = "matrix202";
             this.matrix202.Size = new System.Drawing.Size(50, 23);
             this.matrix202.TabIndex = 4;
-            this.matrix202.ValidatingType = typeof(int);
             // 
             // matrix211
             // 
             this.matrix211.Location = new System.Drawing.Point(78, 48);
-            this.matrix211.Mask = "000";
             this.matrix211.Name = "matrix211";
             this.matrix211.Size = new System.Drawing.Size(50, 23);
             this.matrix211.TabIndex = 3;
-            this.matrix211.ValidatingType = typeof(int);
             // 
             // matrix210
             // 
             this.matrix210.Location = new System.Drawing.Point(22, 48);
-            this.matrix210.Mask = "000";
             this.matrix210.Name = "matrix210";
             this.matrix210.Size = new System.Drawing.Size(50, 23);
             this.matrix210.TabIndex = 2;
-            this.matrix210.ValidatingType = typeof(int);
             // 
             // matrix201
             // 
             this.matrix201.Location = new System.Drawing.Point(78, 19);
-            this.matrix201.Mask = "000";
             this.matrix201.Name = "matrix201";
             this.matrix201.Size = new System.Drawing.Size(50, 23);
             this.matrix201.TabIndex = 1;
-            this.matrix201.ValidatingType = typeof(int);
             // 
             // matrix200
             // 
             this.matrix200.Location = new System.Drawing.Point(22, 19);
-            this.matrix200.Mask = "000";
             this.matrix200.Name = "matrix200";
             this.matrix200.Size = new System.Drawing.Size(50, 23);
             this.matrix200.TabIndex = 0;
-            this.matrix200.ValidatingType = typeof(int);
             // 
             // inverseButton2
             // 
