@@ -104,20 +104,23 @@ namespace OOP_Lab_5.Core
             var det = 0;
             for (int i = 0; i < Count; i++)
             {
+                var mul = 1;
                 for (int j = 0; j < Count; j++)
                 {
                     var k = j + i < Count ? j + i : i + j - Count;
-                    det += _matrix[j][k];
+                    mul *= _matrix[j][k];
                 }
-                
+                det += mul;
             }
             for (int i = 0; i < Count; i++)
             {
+                var mul = 1;
                 for (int j = 0; j < Count; j++)
                 {
                     var k = Count - i - j - 1 >= 0 ? Count - i - j - 1 : 2 * Count - i - j - 1;
-                    det -= _matrix[k][j];
+                    mul*= _matrix[k][j];
                 }
+                det -= mul;
             }
             return det;
         }
