@@ -43,9 +43,90 @@ namespace OOP_Lab_5.Tests
             {
                 new List<int>{1, 1, 2},
                 new List<int>{3, 5, 8},
-                new List<int>{13, 21, 34}
+                new List<int>{13, 21, 24}
             });
-            Assert.Zero(matrix.FindDeterminant());
+            Assert.AreEqual(matrix.FindDeterminant(), -20);
+        }
+
+        [Test]
+        public void FindDeterminant_Det_Equals11()
+        {
+            var matrix = new Matrix(new List<List<int>>
+            {
+                new List<int>{-5, -4, -3},
+                new List<int>{6, 7, 8},
+                new List<int>{2, 1, -1}
+            });
+            Assert.AreEqual(matrix.FindDeterminant(), 11);
+        }
+
+        [Test]
+        public void Transpose_Matrix_EqualsTransposeMatrix()
+        {
+            var matrix = new Matrix(new List<List<int>>
+            {
+                new List<int>{1, 1, 2},
+                new List<int>{3, 5, 8},
+                new List<int>{13, 21, 24}
+            });
+            var matrixT = matrix.Transpose();
+            for (int i = 0; i < matrix.Count; i++)
+            {
+                for (int j = 0; j < matrix.Count; j++)
+                {
+                    Assert.AreEqual(matrix[i, j], matrixT[j, i]);
+                }
+            }
+        }
+
+        [Test]
+        public void FindRank_Rank_Equals3()
+        {
+            var matrix = new Matrix(new List<List<int>>
+            {
+                new List<int>{1, 2, 3},
+                new List<int>{3, 1, 2},
+                new List<int>{2, 3, 1}
+            });
+            Assert.AreEqual(matrix.FindRank(), 3);
+        }
+
+        [Test]
+        public void FindRank_Rank_Equals2()
+        {
+            var matrix = new Matrix(new List<List<int>>
+            {
+                new List<int>{1, 2, 2, 3},
+                new List<int>{3, 4, 4, 5},
+                new List<int>{5, 6, 6, 7},
+                new List<int>{0, 0, 0, 0}
+            });
+            Assert.AreEqual(matrix.FindRank(), 2);
+        }
+
+        [Test]
+        public void FindRank_Rank_Equals1()
+        {
+            var matrix = new Matrix(new List<List<int>>
+            {
+                new List<int>{1, 2, 3, 4},
+                new List<int>{2, 4, 6, 8},
+                new List<int>{0, 0, 0, 0},
+                new List<int>{0, 0, 0, 0}
+            });
+            Assert.AreEqual(matrix.FindRank(), 1);
+        }
+
+        [Test]
+        public void FindRank_Rank_Equals0()
+        {
+            var matrix = new Matrix(new List<List<int>>
+            {
+                new List<int>{0, 0, 0},
+                new List<int>{0, 0, 0},
+                new List<int>{0, 0, 0}
+            });
+            Assert.AreEqual(matrix.FindRank(), 0);
         }
     }
 }

@@ -6,6 +6,7 @@ namespace OOP_Lab_5.Core
     public class Matrix
     {
         private List<List<int>> _matrix;
+
         public int Count { get; }
 
         public Matrix(List<List<int>> matrix)
@@ -23,16 +24,87 @@ namespace OOP_Lab_5.Core
                 throw new ArgumentException();
 
             Count = count;
-            _matrix = new List<List<int>>(count);
-            for (int i = 0; i < count; i++)
+            _matrix = new List<List<int>>(Count);
+            for (int i = 0; i < Count; i++)
             {
-                _matrix.Add(new List<int>(count));
-                for (int j = 0; j < count; j++)
+                _matrix.Add(new List<int>(Count));
+                for (int j = 0; j < Count; j++)
                 {
                     _matrix[i].Add(0);
                 }
             }
-        }  
+        }
+
+        public Matrix(Matrix other)
+        {
+            Count = other.Count;
+
+            _matrix = new List<List<int>>(Count);
+            for (int i = 0; i < Count; i++)
+            {
+                _matrix.Add(new List<int>(Count));
+                for (int j = 0; j < Count; j++)
+                {
+                    _matrix[i].Add(other[i, j]);
+                }
+            }
+        }
+
+        private Matrix TriangularCore(out int rank)
+        {
+            rank = Count;
+
+            var matrix = new Matrix(this);
+
+            for (int row = 0; row < rank; row++)
+            {
+                if (matrix[row, row] != 0)
+                {
+                    for (int col = 0; col < Count; col++)
+                    {
+                        if (col != row)
+                        {
+                            double mult =
+                               (double)matrix[col, row] /
+                                        matrix[row, row];
+
+                            for (int i = 0; i < rank; i++)
+
+                                matrix[col, i] -= (int)mult
+                                         * matrix[row, i];
+                        }
+                    }
+                }
+                else
+                {
+                    bool reduce = true;
+
+                    for (int i = row + 1; i < Count; i++)
+                    {
+                        if (matrix[i, row] != 0)
+                        {
+                            for (int j = 0; j < rank; j++)
+                            {
+                                int temp = matrix[row, j];
+                                matrix[row, j] = matrix[i, j];
+                                matrix[i, j] = temp;
+                            }
+                            reduce = false;
+                            break;
+                        }
+                    }
+
+                    if (reduce)
+                    {
+                        rank--;
+                        for (int i = 0; i < Count; i++)
+                            matrix[i, row] = matrix[i, rank];
+                    }
+                    row--;
+                }
+            }
+            return matrix;
+        }
 
         public int this [int i, int j]
         {
@@ -123,6 +195,34 @@ namespace OOP_Lab_5.Core
                 det -= mul;
             }
             return det;
+        }
+
+        public int FindRank()
+        {
+            int rank;
+            TriangularCore(out rank);
+            return rank;
+        }
+
+        public Matrix Transpose()
+        {
+            if (Count < 2) return this;
+
+            var retMatrix = new Matrix(this);
+            for (int i = 0; i < Count; i++)
+            {
+                for (int j = i + 1; j < Count; j++)
+                {
+                    (retMatrix[i, j], retMatrix[j, i]) = (retMatrix[j, i], retMatrix[i, j]);
+                }
+            }
+            return retMatrix;
+        }
+
+        public Matrix Triangular()
+        {
+            int rank;
+            return TriangularCore(out rank);
         }
 
     }
