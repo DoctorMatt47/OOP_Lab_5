@@ -1,13 +1,39 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using OOP_Lab_5.Core.Algorithms;
+using OOP_Lab_5.Core.Iterators;
 
 namespace OOP_Lab_5.Core
 {
-    public class Matrix
+    public class Matrix : IEnumerable
     {
         private List<List<int>> _matrix;
 
         public int Count { get; }
+
+        public IFindDeterminant FindDeterminantAlgorithm { private get; set; }
+
+        public IFindRank FindRankAlgorithm { private get; set; }
+
+        public IMultiply MultiplyAlgorithm { private get; set; }
+
+        public Matrix(int[,] matrix)
+        {
+            if (matrix.Length > 0 && matrix.GetLength(0) == matrix.GetLength(1))
+                throw new ArgumentException();
+
+            Count = matrix.Length;
+            _matrix = new List<List<int>>(Count);
+            for (int i = 0; i < Count; i++)
+            {
+                _matrix.Add(new List<int>(Count));
+                for (int j = 0; j < Count; j++)
+                {
+                    _matrix[i].Add(matrix[i, j]);
+                }
+            }
+        }
 
         public Matrix(List<List<int>> matrix)
         {
@@ -47,6 +73,71 @@ namespace OOP_Lab_5.Core
                 {
                     _matrix[i].Add(other[i, j]);
                 }
+            }
+        }
+
+        public static Matrix operator -(Matrix matrix)
+        {
+            Matrix retMatrix = new Matrix(matrix.Count);
+            for (int i = 0; i < retMatrix.Count; i++)
+            {
+                for (int j = 0; j < retMatrix.Count; j++)
+                {
+                    retMatrix[i, j] = -matrix[i, j];
+                }
+            }
+            return retMatrix;
+        }
+
+        public static Matrix operator +(Matrix left, Matrix right)
+        {
+            if (left.Count != right.Count)
+                throw new ArgumentException();
+
+            Matrix retMatrix = new Matrix(left.Count);
+            for (int i = 0; i < retMatrix.Count; i++)
+            {
+                for (int j = 0; j < retMatrix.Count; j++)
+                {
+                    retMatrix[i, j] = left[i, j] + right[i, j];
+                }
+            }
+            return retMatrix;
+        }
+
+        public static Matrix operator -(Matrix left, Matrix right)
+        {
+            return left + (-right);
+        }
+
+        public static Matrix operator *(Matrix left, Matrix right)
+        {
+            if (left.Count != right.Count)
+                throw new ArgumentException();
+
+            Matrix retMatrix = new Matrix(left.Count);
+            for (int i = 0; i < retMatrix.Count; i++)
+            {
+                for (int j = 0; j < retMatrix.Count; j++)
+                {
+                    for (int k = 0; k < retMatrix.Count; k++)
+                    {
+                        retMatrix[i, j] += left[i, k] * right[k, j];
+                    }
+                }
+            }
+            return retMatrix;
+        }
+
+        public int this[int i, int j]
+        {
+            get
+            {
+                return _matrix[i][j];
+            }
+            set
+            {
+                _matrix[i][j] = value;
             }
         }
 
@@ -106,95 +197,27 @@ namespace OOP_Lab_5.Core
             return matrix;
         }
 
-        public int this [int i, int j]
-        {
-            get
-            {
-                return _matrix[i][j];
-            }
-            set
-            {
-                _matrix[i][j] = value;
-            }
-        }
+        public List<List<int>> GetList() => new List<List<int>>(_matrix);
 
-        public static Matrix operator +(Matrix left, Matrix right)
+        public int[,] GetArray()
         {
-            if (left.Count != right.Count)
-                throw new ArgumentException();
-
-            Matrix retMatrix = new Matrix(left.Count);
-            for (int i = 0; i < retMatrix.Count; i++)
+            var array = new int[Count, Count];
+            for (int i = 0; i < Count; i++)
             {
-                for (int j = 0; j < retMatrix.Count; j++)
+                _matrix.Add(new List<int>(Count));
+                for (int j = 0; j < Count; j++)
                 {
-                    retMatrix[i, j] = left[i, j] + right[i, j];
+                    array[i, j] = this[i, j];
                 }
             }
-            return retMatrix;
-        }
-
-        public static Matrix operator -(Matrix matrix)
-        {
-            Matrix retMatrix = new Matrix(matrix.Count);
-            for (int i = 0; i < retMatrix.Count; i++)
-            {
-                for (int j = 0; j < retMatrix.Count; j++)
-                {
-                    retMatrix[i, j] = -matrix[i, j];
-                }
-            }
-            return retMatrix;
-        }
-
-        public static Matrix operator -(Matrix left, Matrix right)
-        {
-            return left + (-right);
-        }
-
-        public static Matrix operator *(Matrix left, Matrix right)
-        {
-            if (left.Count != right.Count)
-                throw new ArgumentException();
-
-            Matrix retMatrix = new Matrix(left.Count);
-            for (int i = 0; i < retMatrix.Count; i++)
-            {
-                for (int j = 0; j < retMatrix.Count; j++)
-                {
-                    for (int k = 0; k < retMatrix.Count; k++)
-                    {
-                        retMatrix[i, j] += left[i, k] * right[k, j];
-                    }
-                }
-            }
-            return retMatrix;
+            return array;
         }
 
         public int FindDeterminant()
         {
-            var det = 0;
-            for (int i = 0; i < Count; i++)
-            {
-                var mul = 1;
-                for (int j = 0; j < Count; j++)
-                {
-                    var k = j + i < Count ? j + i : i + j - Count;
-                    mul *= _matrix[j][k];
-                }
-                det += mul;
-            }
-            for (int i = 0; i < Count; i++)
-            {
-                var mul = 1;
-                for (int j = 0; j < Count; j++)
-                {
-                    var k = Count - i - j - 1 >= 0 ? Count - i - j - 1 : 2 * Count - i - j - 1;
-                    mul*= _matrix[k][j];
-                }
-                det -= mul;
-            }
-            return det;
+            if (FindDeterminantAlgorithm == null)
+                FindDeterminantAlgorithm = new MyFindDeterminant();
+            return FindDeterminantAlgorithm.Execute(this);
         }
 
         public int FindRank()
@@ -225,5 +248,14 @@ namespace OOP_Lab_5.Core
             return TriangularCore(out rank);
         }
 
+        public Matrix Square()
+        {
+            return this * this;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return new MatrixEnumenator(this);
+        }
     }
 }
