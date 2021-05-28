@@ -1,5 +1,4 @@
-﻿
-namespace OOP_Lab_5.Core.Algorithms
+﻿namespace OOP_Lab_5.Core.Algorithms
 {
     public class NativeTriangular : ITriangular
     {
