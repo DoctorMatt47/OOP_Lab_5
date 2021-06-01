@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using OOP_Lab_5.Core.Algorithms;
 using OOP_Lab_5.Core.Iterators;
+using OOP_Lab_5.Core.Memento;
 
 namespace OOP_Lab_5.Core
 {
     public class Matrix : IEnumerable
     {
         private List<List<int>> _matrix;
-        public int Count { get; }
+        public int Count { get; private set; }
         public IFindDeterminant FindDeterminantAlgorithm { private get; set; }
         public IFindRank FindRankAlgorithm { private get; set; }
         public ITriangular TriangularAlgorithm { private get; set; }
@@ -35,7 +36,7 @@ namespace OOP_Lab_5.Core
         public Matrix(List<List<int>> matrix)
         {
             if (matrix.Count > 0 && matrix.Count != matrix[0].Count)
-                throw new ArgumentException();
+                throw new ArgumentException("Matrix is not square");
 
             _matrix = matrix;
             Count = matrix.Count;
@@ -44,7 +45,7 @@ namespace OOP_Lab_5.Core
         public Matrix(int count)
         {
             if (count < 0)
-                throw new ArgumentException();
+                throw new ArgumentException("Count must not be negative");
 
             Count = count;
             _matrix = new List<List<int>>(Count);
@@ -89,7 +90,7 @@ namespace OOP_Lab_5.Core
         public static Matrix operator +(Matrix left, Matrix right)
         {
             if (left.Count != right.Count)
-                throw new ArgumentException();
+                throw new ArgumentException("Matrix is not square");
 
             Matrix retMatrix = new Matrix(left.Count);
             for (int i = 0; i < retMatrix.Count; i++)
@@ -187,6 +188,22 @@ namespace OOP_Lab_5.Core
         public IEnumerator GetEnumerator()
         {
             return new MatrixEnumenator(this);
+        }
+
+        public IMatrixMemento Save()
+        {
+            return new MatrixMemento(_matrix);
+        }
+
+        public void Restore(IMatrixMemento memento)
+        {
+            if (memento is not MatrixMemento)
+            {
+                throw new Exception("Unknown memento class " +
+                    memento.ToString());
+            }
+            _matrix = memento.Matrix;
+            Count = memento.Count;
         }
     }
 }
