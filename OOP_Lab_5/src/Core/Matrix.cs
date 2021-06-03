@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using OOP_Lab_5.Core.Algorithms;
 using OOP_Lab_5.Core.Iterators;
 using OOP_Lab_5.Core.Memento;
+using OOP_Lab_5.Core.Prototype;
 
 namespace OOP_Lab_5.Core
 {
-    public class Matrix : IEnumerable
+    public class Matrix : IEnumerable, IPrototype
     {
         private List<List<int>> _matrix;
         public int Count { get; private set; }
@@ -183,6 +184,11 @@ namespace OOP_Lab_5.Core
         public Matrix Square()
         {
             return this * this;
+        }
+
+        public IPrototype Clone()
+        {
+            return new Matrix(this);
         }
 
         public IEnumerator GetEnumerator()
