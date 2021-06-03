@@ -8,16 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Update="newForm.cs">
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="src\Core\Adapters\" />
   </ItemGroup>
 
 </Project>
