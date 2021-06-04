@@ -102,34 +102,10 @@ namespace OOP_Lab_5
             }
         }
 
-        private void twoXTwoButton_Click(object sender, EventArgs e)
+        private void sizeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             HideMatrixes();
-            ShowMatrixes(2);
-        }
-
-        private void threeXThreeButton_Click(object sender, EventArgs e)
-        {
-            HideMatrixes();
-            ShowMatrixes(3);
-        }
-
-        private void fourXFourButton_Click(object sender, EventArgs e)
-        {
-            HideMatrixes();
-            ShowMatrixes(4);
-        }
-
-        private void fiveXFiveButton_Click(object sender, EventArgs e)
-        {
-            HideMatrixes();
-            ShowMatrixes(5);
-        }
-
-        private void sixXSixButton_Click(object sender, EventArgs e)
-        {
-            HideMatrixes();
-            ShowMatrixes(6);
+            ShowMatrixes(((ComboBox)sender).SelectedIndex + 2);
         }
     }
 }
