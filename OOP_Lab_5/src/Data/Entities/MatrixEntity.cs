@@ -35,7 +35,7 @@ namespace OOP_Lab_5.Data.Entities
                     {
                         matrixNumber += Matrix[k++];
                     }
-                    matrix[i, j] = Convert.ToInt32(matrixNumber);
+                    matrix[i, j] = Convert.ToInt64(matrixNumber);
                 }
             }
             return matrix;

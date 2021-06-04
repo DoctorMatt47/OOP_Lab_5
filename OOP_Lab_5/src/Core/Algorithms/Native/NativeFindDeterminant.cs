@@ -2,12 +2,12 @@
 {
     public class NativeFindDeterminant : IFindDeterminant
     {
-        public int Execute(Matrix matrix)
+        public long Execute(Matrix matrix)
         {
-            var det = 0;
+            long det = 0;
             for (int i = 0; i < matrix.Count; i++)
             {
-                var mul = 1;
+                long mul = 1;
                 for (int j = 0; j < matrix.Count; j++)
                 {
                     mul *= matrix[j, (j + i) % matrix.Count];
@@ -16,7 +16,7 @@
             }
             for (int i = 0; i < matrix.Count; i++)
             {
-                var mul = 1;
+                long mul = 1;
                 for (int j = 0; j < matrix.Count; j++)
                 {
                     var k = matrix.Count - i - j - 1;

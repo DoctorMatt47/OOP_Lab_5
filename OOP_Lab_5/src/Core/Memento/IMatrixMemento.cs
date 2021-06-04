@@ -8,7 +8,7 @@ namespace OOP_Lab_5.Core.Memento
 {
     public interface IMatrixMemento
     {
-        List<List<int>> Matrix { get; }
+        List<List<long>> Matrix { get; }
         int Count { get; }
     }
 }

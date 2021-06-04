@@ -37,7 +37,7 @@
                         {
                             for (int j = 0; j < rank; j++)
                             {
-                                int temp = triangular[row, j];
+                                long temp = triangular[row, j];
                                 triangular[row, j] = triangular[i, j];
                                 triangular[i, j] = temp;
                             }

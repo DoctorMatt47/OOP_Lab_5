@@ -25,7 +25,7 @@ namespace OOP_Lab_5.Core.Iterators
             {
                 if (_j == -1 || _i == -1)
                     throw new InvalidOperationException();
-                _matrix[_i, _j] = (int)value;
+                _matrix[_i, _j] = (long)value;
             }
         }
 

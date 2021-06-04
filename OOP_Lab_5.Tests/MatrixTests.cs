@@ -27,11 +27,11 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindDeterminant_Det_EqualsZero()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{1, 2, 3},
-                new List<int>{2, 3, 4},
-                new List<int>{3, 4, 5}
+                new List<long>{1, 2, 3},
+                new List<long>{2, 3, 4},
+                new List<long>{3, 4, 5}
             });
             Assert.Zero(matrix.FindDeterminant());
         }
@@ -39,11 +39,11 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindDeterminant_Det_EqualsMinus20()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{1, 1, 2},
-                new List<int>{3, 5, 8},
-                new List<int>{13, 21, 24}
+                new List<long>{1, 1, 2},
+                new List<long>{3, 5, 8},
+                new List<long>{13, 21, 24}
             });
             Assert.AreEqual(matrix.FindDeterminant(), -20);
         }
@@ -51,11 +51,11 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindDeterminant_Det_Equals11()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{-5, -4, -3},
-                new List<int>{6, 7, 8},
-                new List<int>{2, 1, -1}
+                new List<long>{-5, -4, -3},
+                new List<long>{6, 7, 8},
+                new List<long>{2, 1, -1}
             });
             Assert.AreEqual(matrix.FindDeterminant(), 11);
         }
@@ -63,11 +63,11 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void Transpose_Matrix_EqualsTransposeMatrix()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{1, 1, 2},
-                new List<int>{3, 5, 8},
-                new List<int>{13, 21, 24}
+                new List<long>{1, 1, 2},
+                new List<long>{3, 5, 8},
+                new List<long>{13, 21, 24}
             });
             var matrixT = matrix.Transpose();
             for (int i = 0; i < matrix.Count; i++)
@@ -82,11 +82,11 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindRank_Rank_Equals3()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{1, 2, 3},
-                new List<int>{3, 1, 2},
-                new List<int>{2, 3, 1}
+                new List<long>{1, 2, 3},
+                new List<long>{3, 1, 2},
+                new List<long>{2, 3, 1}
             });
             Assert.AreEqual(matrix.FindRank(), 3);
         }
@@ -94,12 +94,12 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindRank_Rank_Equals2()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{1, 2, 2, 3},
-                new List<int>{3, 4, 4, 5},
-                new List<int>{5, 6, 6, 7},
-                new List<int>{0, 0, 0, 0}
+                new List<long>{1, 2, 2, 3},
+                new List<long>{3, 4, 4, 5},
+                new List<long>{5, 6, 6, 7},
+                new List<long>{0, 0, 0, 0}
             });
             Assert.AreEqual(matrix.FindRank(), 2);
         }
@@ -107,12 +107,12 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindRank_Rank_Equals1()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{1, 2, 3, 4},
-                new List<int>{2, 4, 6, 8},
-                new List<int>{0, 0, 0, 0},
-                new List<int>{0, 0, 0, 0}
+                new List<long>{1, 2, 3, 4},
+                new List<long>{2, 4, 6, 8},
+                new List<long>{0, 0, 0, 0},
+                new List<long>{0, 0, 0, 0}
             });
             Assert.AreEqual(matrix.FindRank(), 1);
         }
@@ -120,11 +120,11 @@ namespace OOP_Lab_5.Tests
         [Test]
         public void FindRank_Rank_Equals0()
         {
-            var matrix = new Matrix(new List<List<int>>
+            var matrix = new Matrix(new List<List<long>>
             {
-                new List<int>{0, 0, 0},
-                new List<int>{0, 0, 0},
-                new List<int>{0, 0, 0}
+                new List<long>{0, 0, 0},
+                new List<long>{0, 0, 0},
+                new List<long>{0, 0, 0}
             });
             Assert.AreEqual(matrix.FindRank(), 0);
         }

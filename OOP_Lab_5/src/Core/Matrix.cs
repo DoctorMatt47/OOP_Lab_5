@@ -10,23 +10,23 @@ namespace OOP_Lab_5.Core
 {
     public class Matrix : IEnumerable, IPrototype
     {
-        private List<List<int>> _matrix;
+        private List<List<long>> _matrix;
         public int Count { get; private set; }
         public IFindDeterminant FindDeterminantAlgorithm { private get; set; }
         public IFindRank FindRankAlgorithm { private get; set; }
         public ITriangular TriangularAlgorithm { private get; set; }
         public IMultiply MultiplyAlgorithm { private get; set; }
 
-        public Matrix(int[,] matrix)
+        public Matrix(long[,] matrix)
         {
             if (matrix.Length > 0 && matrix.GetLength(0) == matrix.GetLength(1))
                 throw new ArgumentException();
 
             Count = matrix.Length;
-            _matrix = new List<List<int>>(Count);
+            _matrix = new List<List<long>>(Count);
             for (int i = 0; i < Count; i++)
             {
-                _matrix.Add(new List<int>(Count));
+                _matrix.Add(new List<long>(Count));
                 for (int j = 0; j < Count; j++)
                 {
                     _matrix[i].Add(matrix[i, j]);
@@ -34,7 +34,7 @@ namespace OOP_Lab_5.Core
             }
         }
 
-        public Matrix(List<List<int>> matrix)
+        public Matrix(List<List<long>> matrix)
         {
             if (matrix.Count > 0 && matrix.Count != matrix[0].Count)
                 throw new ArgumentException("Matrix is not square");
@@ -49,10 +49,10 @@ namespace OOP_Lab_5.Core
                 throw new ArgumentException("Count must not be negative");
 
             Count = count;
-            _matrix = new List<List<int>>(Count);
+            _matrix = new List<List<long>>(Count);
             for (int i = 0; i < Count; i++)
             {
-                _matrix.Add(new List<int>(Count));
+                _matrix.Add(new List<long>(Count));
                 for (int j = 0; j < Count; j++)
                 {
                     _matrix[i].Add(0);
@@ -64,10 +64,10 @@ namespace OOP_Lab_5.Core
         {
             Count = other.Count;
 
-            _matrix = new List<List<int>>(Count);
+            _matrix = new List<List<long>>(Count);
             for (int i = 0; i < Count; i++)
             {
-                _matrix.Add(new List<int>(Count));
+                _matrix.Add(new List<long>(Count));
                 for (int j = 0; j < Count; j++)
                 {
                     _matrix[i].Add(other[i, j]);
@@ -134,7 +134,7 @@ namespace OOP_Lab_5.Core
             return right * left;
         }
 
-        public int this[int i, int j]
+        public long this[int i, int j]
         {
             get
             {
@@ -146,14 +146,14 @@ namespace OOP_Lab_5.Core
             }
         }
 
-        public List<List<int>> GetList() => new List<List<int>>(_matrix);
+        public List<List<long>> GetList() => new List<List<long>>(_matrix);
 
-        public int[,] GetArray()
+        public long[,] GetArray()
         {
-            var array = new int[Count, Count];
+            var array = new long[Count, Count];
             for (int i = 0; i < Count; i++)
             {
-                _matrix.Add(new List<int>(Count));
+                _matrix.Add(new List<long>(Count));
                 for (int j = 0; j < Count; j++)
                 {
                     array[i, j] = this[i, j];
@@ -162,7 +162,7 @@ namespace OOP_Lab_5.Core
             return array;
         }
 
-        public int FindDeterminant()
+        public long FindDeterminant()
         {
             if (FindDeterminantAlgorithm is null)
                 FindDeterminantAlgorithm = new NativeFindDeterminant();
