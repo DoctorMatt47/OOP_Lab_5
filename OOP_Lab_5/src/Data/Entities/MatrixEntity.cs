@@ -4,8 +4,9 @@ using System;
 
 namespace OOP_Lab_5.Data.Entities
 {
-    public class MatrixEntity
+    public class MatrixEntity : BaseEntity<string>
     {
+        public override string Id { get; set; }
         public string Matrix { get; set; }
         public int Count { get; set; }
 
