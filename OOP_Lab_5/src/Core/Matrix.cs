@@ -158,6 +158,19 @@ namespace OOP_Lab_5.Core
             return FindRankAlgorithm.Execute(this);
         }
 
+        public Matrix ChangeCount(int count)
+        {
+            var matrix = new Matrix(count);
+            for (int i = 0; i < count; i++)
+            {
+                for (int j = 0; j < count; j++)
+                {
+                    matrix[i, j] = i < Count && j < Count ? this[i, j] : 0;
+                }
+            }
+            return matrix;
+        }
+
         public Matrix Triangular()
         {
             if (TriangularAlgorithm is null)
