@@ -70,6 +70,7 @@ namespace OOP_Lab_5
             this.res01 = new System.Windows.Forms.TextBox();
             this.res00 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.matrix155 = new System.Windows.Forms.MaskedTextBox();
             this.matrix154 = new System.Windows.Forms.MaskedTextBox();
             this.matrix153 = new System.Windows.Forms.MaskedTextBox();
@@ -107,6 +108,7 @@ namespace OOP_Lab_5
             this.matrix101 = new System.Windows.Forms.MaskedTextBox();
             this.matrix100 = new System.Windows.Forms.MaskedTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.matrix255 = new System.Windows.Forms.MaskedTextBox();
             this.matrix254 = new System.Windows.Forms.MaskedTextBox();
             this.matrix253 = new System.Windows.Forms.MaskedTextBox();
@@ -153,8 +155,8 @@ namespace OOP_Lab_5
             this.pasteButton1 = new System.Windows.Forms.Button();
             this.pasteButton2 = new System.Windows.Forms.Button();
             this.copyButton2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pasteButton3 = new System.Windows.Forms.Button();
+            this.copyButton3 = new System.Windows.Forms.Button();
             this.saveToDbButton1 = new System.Windows.Forms.Button();
             this.saveBox1 = new System.Windows.Forms.TextBox();
             this.loadBox1 = new System.Windows.Forms.TextBox();
@@ -163,9 +165,7 @@ namespace OOP_Lab_5
             this.loadBox2 = new System.Windows.Forms.TextBox();
             this.saveBox2 = new System.Windows.Forms.TextBox();
             this.saveToDbButton2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.loadBox3 = new System.Windows.Forms.TextBox();
+            this.saveButton3 = new System.Windows.Forms.Button();
             this.saveBox3 = new System.Windows.Forms.TextBox();
             this.transposeBox1 = new System.Windows.Forms.ComboBox();
             this.detBox1 = new System.Windows.Forms.ComboBox();
@@ -196,7 +196,7 @@ namespace OOP_Lab_5
             // 
             this.detButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.detButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.detButton.Location = new System.Drawing.Point(146, 313);
+            this.detButton.Location = new System.Drawing.Point(146, 337);
             this.detButton.Name = "detButton";
             this.detButton.Size = new System.Drawing.Size(106, 34);
             this.detButton.TabIndex = 39;
@@ -206,7 +206,7 @@ namespace OOP_Lab_5
             // squareButton
             // 
             this.squareButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton.Location = new System.Drawing.Point(258, 313);
+            this.squareButton.Location = new System.Drawing.Point(258, 337);
             this.squareButton.Name = "squareButton";
             this.squareButton.Size = new System.Drawing.Size(106, 34);
             this.squareButton.TabIndex = 38;
@@ -218,7 +218,7 @@ namespace OOP_Lab_5
             this.transposeButton.BackColor = System.Drawing.Color.LightCyan;
             this.transposeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transposeButton.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.transposeButton.Location = new System.Drawing.Point(34, 313);
+            this.transposeButton.Location = new System.Drawing.Point(34, 337);
             this.transposeButton.Name = "transposeButton";
             this.transposeButton.Size = new System.Drawing.Size(106, 34);
             this.transposeButton.TabIndex = 37;
@@ -264,7 +264,7 @@ namespace OOP_Lab_5
             this.panel2.Controls.Add(this.res02);
             this.panel2.Controls.Add(this.res01);
             this.panel2.Controls.Add(this.res00);
-            this.panel2.Location = new System.Drawing.Point(772, 100);
+            this.panel2.Location = new System.Drawing.Point(772, 124);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(373, 207);
             this.panel2.TabIndex = 36;
@@ -524,6 +524,7 @@ namespace OOP_Lab_5
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.matrix155);
             this.panel1.Controls.Add(this.matrix154);
             this.panel1.Controls.Add(this.matrix153);
@@ -560,10 +561,22 @@ namespace OOP_Lab_5
             this.panel1.Controls.Add(this.matrix110);
             this.panel1.Controls.Add(this.matrix101);
             this.panel1.Controls.Add(this.matrix100);
-            this.panel1.Location = new System.Drawing.Point(12, 100);
+            this.panel1.Location = new System.Drawing.Point(12, 124);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(374, 207);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCyan;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Location = new System.Drawing.Point(2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(20, 20);
+            this.button1.TabIndex = 90;
+            this.button1.Text = "←";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // matrix155
             // 
@@ -820,6 +833,7 @@ namespace OOP_Lab_5
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.matrix255);
             this.panel3.Controls.Add(this.matrix254);
             this.panel3.Controls.Add(this.matrix253);
@@ -856,10 +870,22 @@ namespace OOP_Lab_5
             this.panel3.Controls.Add(this.matrix210);
             this.panel3.Controls.Add(this.matrix201);
             this.panel3.Controls.Add(this.matrix200);
-            this.panel3.Location = new System.Drawing.Point(392, 100);
+            this.panel3.Location = new System.Drawing.Point(392, 124);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(374, 207);
             this.panel3.TabIndex = 36;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightCyan;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button2.Location = new System.Drawing.Point(2, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(20, 20);
+            this.button2.TabIndex = 91;
+            this.button2.Text = "←";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // matrix255
             // 
@@ -1116,7 +1142,7 @@ namespace OOP_Lab_5
             // inverseButton2
             // 
             this.inverseButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inverseButton2.Location = new System.Drawing.Point(414, 314);
+            this.inverseButton2.Location = new System.Drawing.Point(414, 338);
             this.inverseButton2.Name = "inverseButton2";
             this.inverseButton2.Size = new System.Drawing.Size(106, 33);
             this.inverseButton2.TabIndex = 41;
@@ -1127,7 +1153,7 @@ namespace OOP_Lab_5
             // 
             this.detButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.detButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.detButton2.Location = new System.Drawing.Point(526, 314);
+            this.detButton2.Location = new System.Drawing.Point(526, 338);
             this.detButton2.Name = "detButton2";
             this.detButton2.Size = new System.Drawing.Size(106, 33);
             this.detButton2.TabIndex = 42;
@@ -1137,7 +1163,7 @@ namespace OOP_Lab_5
             // squareButton2
             // 
             this.squareButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.squareButton2.Location = new System.Drawing.Point(638, 315);
+            this.squareButton2.Location = new System.Drawing.Point(638, 339);
             this.squareButton2.Name = "squareButton2";
             this.squareButton2.Size = new System.Drawing.Size(106, 32);
             this.squareButton2.TabIndex = 43;
@@ -1147,7 +1173,7 @@ namespace OOP_Lab_5
             // multiplyButton
             // 
             this.multiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.multiplyButton.Location = new System.Drawing.Point(794, 315);
+            this.multiplyButton.Location = new System.Drawing.Point(794, 339);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(106, 32);
             this.multiplyButton.TabIndex = 44;
@@ -1157,7 +1183,7 @@ namespace OOP_Lab_5
             // additionButton
             // 
             this.additionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.additionButton.Location = new System.Drawing.Point(1018, 315);
+            this.additionButton.Location = new System.Drawing.Point(1018, 339);
             this.additionButton.Name = "additionButton";
             this.additionButton.Size = new System.Drawing.Size(106, 32);
             this.additionButton.TabIndex = 45;
@@ -1167,7 +1193,7 @@ namespace OOP_Lab_5
             // differenceButton
             // 
             this.differenceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.differenceButton.Location = new System.Drawing.Point(906, 315);
+            this.differenceButton.Location = new System.Drawing.Point(906, 339);
             this.differenceButton.Name = "differenceButton";
             this.differenceButton.Size = new System.Drawing.Size(106, 32);
             this.differenceButton.TabIndex = 46;
@@ -1180,7 +1206,7 @@ namespace OOP_Lab_5
             this.copyButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.copyButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.copyButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.copyButton1.Location = new System.Drawing.Point(34, 44);
+            this.copyButton1.Location = new System.Drawing.Point(34, 66);
             this.copyButton1.Name = "copyButton1";
             this.copyButton1.Size = new System.Drawing.Size(106, 23);
             this.copyButton1.TabIndex = 52;
@@ -1193,7 +1219,7 @@ namespace OOP_Lab_5
             this.pasteButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pasteButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pasteButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pasteButton1.Location = new System.Drawing.Point(34, 73);
+            this.pasteButton1.Location = new System.Drawing.Point(34, 95);
             this.pasteButton1.Name = "pasteButton1";
             this.pasteButton1.Size = new System.Drawing.Size(106, 23);
             this.pasteButton1.TabIndex = 53;
@@ -1206,7 +1232,7 @@ namespace OOP_Lab_5
             this.pasteButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pasteButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pasteButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pasteButton2.Location = new System.Drawing.Point(414, 44);
+            this.pasteButton2.Location = new System.Drawing.Point(414, 66);
             this.pasteButton2.Name = "pasteButton2";
             this.pasteButton2.Size = new System.Drawing.Size(106, 23);
             this.pasteButton2.TabIndex = 55;
@@ -1219,38 +1245,38 @@ namespace OOP_Lab_5
             this.copyButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.copyButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.copyButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.copyButton2.Location = new System.Drawing.Point(414, 73);
+            this.copyButton2.Location = new System.Drawing.Point(414, 95);
             this.copyButton2.Name = "copyButton2";
             this.copyButton2.Size = new System.Drawing.Size(106, 23);
             this.copyButton2.TabIndex = 54;
             this.copyButton2.Text = "Copy";
             this.copyButton2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // pasteButton3
             // 
-            this.button1.BackColor = System.Drawing.Color.LightCyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(794, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 23);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Paste";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pasteButton3.BackColor = System.Drawing.Color.LightCyan;
+            this.pasteButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pasteButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pasteButton3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.pasteButton3.Location = new System.Drawing.Point(794, 66);
+            this.pasteButton3.Name = "pasteButton3";
+            this.pasteButton3.Size = new System.Drawing.Size(106, 23);
+            this.pasteButton3.TabIndex = 57;
+            this.pasteButton3.Text = "Paste";
+            this.pasteButton3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // copyButton3
             // 
-            this.button2.BackColor = System.Drawing.Color.LightCyan;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(794, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
-            this.button2.TabIndex = 56;
-            this.button2.Text = "Copy";
-            this.button2.UseVisualStyleBackColor = false;
+            this.copyButton3.BackColor = System.Drawing.Color.LightCyan;
+            this.copyButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.copyButton3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.copyButton3.Location = new System.Drawing.Point(794, 95);
+            this.copyButton3.Name = "copyButton3";
+            this.copyButton3.Size = new System.Drawing.Size(106, 23);
+            this.copyButton3.TabIndex = 56;
+            this.copyButton3.Text = "Copy";
+            this.copyButton3.UseVisualStyleBackColor = false;
             // 
             // saveToDbButton1
             // 
@@ -1258,7 +1284,7 @@ namespace OOP_Lab_5
             this.saveToDbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveToDbButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.saveToDbButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.saveToDbButton1.Location = new System.Drawing.Point(146, 73);
+            this.saveToDbButton1.Location = new System.Drawing.Point(146, 95);
             this.saveToDbButton1.Name = "saveToDbButton1";
             this.saveToDbButton1.Size = new System.Drawing.Size(106, 23);
             this.saveToDbButton1.TabIndex = 58;
@@ -1267,14 +1293,14 @@ namespace OOP_Lab_5
             // 
             // saveBox1
             // 
-            this.saveBox1.Location = new System.Drawing.Point(146, 44);
+            this.saveBox1.Location = new System.Drawing.Point(146, 66);
             this.saveBox1.Name = "saveBox1";
             this.saveBox1.Size = new System.Drawing.Size(106, 23);
             this.saveBox1.TabIndex = 59;
             // 
             // loadBox1
             // 
-            this.loadBox1.Location = new System.Drawing.Point(258, 44);
+            this.loadBox1.Location = new System.Drawing.Point(258, 66);
             this.loadBox1.Name = "loadBox1";
             this.loadBox1.Size = new System.Drawing.Size(106, 23);
             this.loadBox1.TabIndex = 60;
@@ -1285,7 +1311,7 @@ namespace OOP_Lab_5
             this.loadFromDbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadFromDbButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.loadFromDbButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.loadFromDbButton1.Location = new System.Drawing.Point(258, 73);
+            this.loadFromDbButton1.Location = new System.Drawing.Point(258, 95);
             this.loadFromDbButton1.Name = "loadFromDbButton1";
             this.loadFromDbButton1.Size = new System.Drawing.Size(106, 23);
             this.loadFromDbButton1.TabIndex = 61;
@@ -1298,7 +1324,7 @@ namespace OOP_Lab_5
             this.loadFromDbButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadFromDbButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.loadFromDbButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.loadFromDbButton2.Location = new System.Drawing.Point(638, 73);
+            this.loadFromDbButton2.Location = new System.Drawing.Point(638, 95);
             this.loadFromDbButton2.Name = "loadFromDbButton2";
             this.loadFromDbButton2.Size = new System.Drawing.Size(106, 23);
             this.loadFromDbButton2.TabIndex = 65;
@@ -1307,14 +1333,14 @@ namespace OOP_Lab_5
             // 
             // loadBox2
             // 
-            this.loadBox2.Location = new System.Drawing.Point(638, 44);
+            this.loadBox2.Location = new System.Drawing.Point(638, 66);
             this.loadBox2.Name = "loadBox2";
             this.loadBox2.Size = new System.Drawing.Size(106, 23);
             this.loadBox2.TabIndex = 64;
             // 
             // saveBox2
             // 
-            this.saveBox2.Location = new System.Drawing.Point(526, 44);
+            this.saveBox2.Location = new System.Drawing.Point(526, 66);
             this.saveBox2.Name = "saveBox2";
             this.saveBox2.Size = new System.Drawing.Size(106, 23);
             this.saveBox2.TabIndex = 63;
@@ -1325,51 +1351,31 @@ namespace OOP_Lab_5
             this.saveToDbButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveToDbButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.saveToDbButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.saveToDbButton2.Location = new System.Drawing.Point(526, 73);
+            this.saveToDbButton2.Location = new System.Drawing.Point(526, 95);
             this.saveToDbButton2.Name = "saveToDbButton2";
             this.saveToDbButton2.Size = new System.Drawing.Size(106, 23);
             this.saveToDbButton2.TabIndex = 62;
             this.saveToDbButton2.Text = "Save";
             this.saveToDbButton2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // saveButton3
             // 
-            this.button3.BackColor = System.Drawing.Color.LightCyan;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Location = new System.Drawing.Point(906, 73);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 23);
-            this.button3.TabIndex = 66;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LightCyan;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button4.Location = new System.Drawing.Point(1018, 73);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 23);
-            this.button4.TabIndex = 67;
-            this.button4.Text = "Load";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // loadBox3
-            // 
-            this.loadBox3.Location = new System.Drawing.Point(1018, 44);
-            this.loadBox3.Name = "loadBox3";
-            this.loadBox3.Size = new System.Drawing.Size(106, 23);
-            this.loadBox3.TabIndex = 68;
+            this.saveButton3.BackColor = System.Drawing.Color.LightCyan;
+            this.saveButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.saveButton3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.saveButton3.Location = new System.Drawing.Point(906, 95);
+            this.saveButton3.Name = "saveButton3";
+            this.saveButton3.Size = new System.Drawing.Size(218, 23);
+            this.saveButton3.TabIndex = 66;
+            this.saveButton3.Text = "Save";
+            this.saveButton3.UseVisualStyleBackColor = false;
             // 
             // saveBox3
             // 
-            this.saveBox3.Location = new System.Drawing.Point(906, 44);
+            this.saveBox3.Location = new System.Drawing.Point(906, 66);
             this.saveBox3.Name = "saveBox3";
-            this.saveBox3.Size = new System.Drawing.Size(106, 23);
+            this.saveBox3.Size = new System.Drawing.Size(218, 23);
             this.saveBox3.TabIndex = 69;
             // 
             // transposeBox1
@@ -1378,7 +1384,7 @@ namespace OOP_Lab_5
             this.transposeBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.transposeBox1.Location = new System.Drawing.Point(34, 353);
+            this.transposeBox1.Location = new System.Drawing.Point(34, 377);
             this.transposeBox1.Name = "transposeBox1";
             this.transposeBox1.Size = new System.Drawing.Size(106, 23);
             this.transposeBox1.TabIndex = 70;
@@ -1390,7 +1396,7 @@ namespace OOP_Lab_5
             this.detBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.detBox1.Location = new System.Drawing.Point(146, 353);
+            this.detBox1.Location = new System.Drawing.Point(146, 377);
             this.detBox1.Name = "detBox1";
             this.detBox1.Size = new System.Drawing.Size(106, 23);
             this.detBox1.TabIndex = 71;
@@ -1402,7 +1408,7 @@ namespace OOP_Lab_5
             this.squareBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.squareBox1.Location = new System.Drawing.Point(258, 353);
+            this.squareBox1.Location = new System.Drawing.Point(258, 377);
             this.squareBox1.Name = "squareBox1";
             this.squareBox1.Size = new System.Drawing.Size(106, 23);
             this.squareBox1.TabIndex = 72;
@@ -1414,7 +1420,7 @@ namespace OOP_Lab_5
             this.transposeBox2.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.transposeBox2.Location = new System.Drawing.Point(414, 353);
+            this.transposeBox2.Location = new System.Drawing.Point(414, 377);
             this.transposeBox2.Name = "transposeBox2";
             this.transposeBox2.Size = new System.Drawing.Size(106, 23);
             this.transposeBox2.TabIndex = 73;
@@ -1426,7 +1432,7 @@ namespace OOP_Lab_5
             this.detBox2.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.detBox2.Location = new System.Drawing.Point(526, 353);
+            this.detBox2.Location = new System.Drawing.Point(526, 377);
             this.detBox2.Name = "detBox2";
             this.detBox2.Size = new System.Drawing.Size(106, 23);
             this.detBox2.TabIndex = 74;
@@ -1438,7 +1444,7 @@ namespace OOP_Lab_5
             this.squareBox2.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.squareBox2.Location = new System.Drawing.Point(638, 353);
+            this.squareBox2.Location = new System.Drawing.Point(638, 377);
             this.squareBox2.Name = "squareBox2";
             this.squareBox2.Size = new System.Drawing.Size(106, 23);
             this.squareBox2.TabIndex = 75;
@@ -1450,7 +1456,7 @@ namespace OOP_Lab_5
             this.mulBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.mulBox1.Location = new System.Drawing.Point(794, 353);
+            this.mulBox1.Location = new System.Drawing.Point(794, 377);
             this.mulBox1.Name = "mulBox1";
             this.mulBox1.Size = new System.Drawing.Size(106, 23);
             this.mulBox1.TabIndex = 76;
@@ -1461,7 +1467,7 @@ namespace OOP_Lab_5
             this.triangularButton1.BackColor = System.Drawing.Color.LightCyan;
             this.triangularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.triangularButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.triangularButton1.Location = new System.Drawing.Point(34, 382);
+            this.triangularButton1.Location = new System.Drawing.Point(34, 406);
             this.triangularButton1.Name = "triangularButton1";
             this.triangularButton1.Size = new System.Drawing.Size(106, 34);
             this.triangularButton1.TabIndex = 77;
@@ -1473,7 +1479,7 @@ namespace OOP_Lab_5
             this.triangularButton2.BackColor = System.Drawing.Color.LightCyan;
             this.triangularButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.triangularButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.triangularButton2.Location = new System.Drawing.Point(414, 382);
+            this.triangularButton2.Location = new System.Drawing.Point(414, 406);
             this.triangularButton2.Name = "triangularButton2";
             this.triangularButton2.Size = new System.Drawing.Size(106, 34);
             this.triangularButton2.TabIndex = 78;
@@ -1485,7 +1491,7 @@ namespace OOP_Lab_5
             this.rankButton1.BackColor = System.Drawing.Color.LightCyan;
             this.rankButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rankButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.rankButton1.Location = new System.Drawing.Point(146, 382);
+            this.rankButton1.Location = new System.Drawing.Point(146, 406);
             this.rankButton1.Name = "rankButton1";
             this.rankButton1.Size = new System.Drawing.Size(106, 34);
             this.rankButton1.TabIndex = 79;
@@ -1497,7 +1503,7 @@ namespace OOP_Lab_5
             this.rankButton2.BackColor = System.Drawing.Color.LightCyan;
             this.rankButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rankButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.rankButton2.Location = new System.Drawing.Point(526, 382);
+            this.rankButton2.Location = new System.Drawing.Point(526, 406);
             this.rankButton2.Name = "rankButton2";
             this.rankButton2.Size = new System.Drawing.Size(106, 34);
             this.rankButton2.TabIndex = 80;
@@ -1510,7 +1516,7 @@ namespace OOP_Lab_5
             this.comboBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox1.Location = new System.Drawing.Point(34, 422);
+            this.comboBox1.Location = new System.Drawing.Point(34, 446);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(106, 23);
             this.comboBox1.TabIndex = 81;
@@ -1522,7 +1528,7 @@ namespace OOP_Lab_5
             this.comboBox2.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox2.Location = new System.Drawing.Point(146, 422);
+            this.comboBox2.Location = new System.Drawing.Point(146, 446);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(106, 23);
             this.comboBox2.TabIndex = 82;
@@ -1534,7 +1540,7 @@ namespace OOP_Lab_5
             this.comboBox3.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox3.Location = new System.Drawing.Point(414, 422);
+            this.comboBox3.Location = new System.Drawing.Point(414, 446);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(106, 23);
             this.comboBox3.TabIndex = 83;
@@ -1546,7 +1552,7 @@ namespace OOP_Lab_5
             this.comboBox4.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox4.Location = new System.Drawing.Point(526, 422);
+            this.comboBox4.Location = new System.Drawing.Point(526, 446);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(106, 23);
             this.comboBox4.TabIndex = 84;
@@ -1557,7 +1563,7 @@ namespace OOP_Lab_5
             this.MultiplyOnButton1.BackColor = System.Drawing.Color.LightCyan;
             this.MultiplyOnButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MultiplyOnButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.MultiplyOnButton1.Location = new System.Drawing.Point(258, 382);
+            this.MultiplyOnButton1.Location = new System.Drawing.Point(258, 406);
             this.MultiplyOnButton1.Name = "MultiplyOnButton1";
             this.MultiplyOnButton1.Size = new System.Drawing.Size(106, 34);
             this.MultiplyOnButton1.TabIndex = 85;
@@ -1569,7 +1575,7 @@ namespace OOP_Lab_5
             this.MultiplyOnButton2.BackColor = System.Drawing.Color.LightCyan;
             this.MultiplyOnButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MultiplyOnButton2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.MultiplyOnButton2.Location = new System.Drawing.Point(638, 382);
+            this.MultiplyOnButton2.Location = new System.Drawing.Point(638, 406);
             this.MultiplyOnButton2.Name = "MultiplyOnButton2";
             this.MultiplyOnButton2.Size = new System.Drawing.Size(106, 34);
             this.MultiplyOnButton2.TabIndex = 86;
@@ -1578,14 +1584,14 @@ namespace OOP_Lab_5
             // 
             // multiplyOnBox1
             // 
-            this.multiplyOnBox1.Location = new System.Drawing.Point(258, 422);
+            this.multiplyOnBox1.Location = new System.Drawing.Point(258, 446);
             this.multiplyOnBox1.Name = "multiplyOnBox1";
             this.multiplyOnBox1.Size = new System.Drawing.Size(106, 23);
             this.multiplyOnBox1.TabIndex = 87;
             // 
             // multiplyOnBox2
             // 
-            this.multiplyOnBox2.Location = new System.Drawing.Point(638, 422);
+            this.multiplyOnBox2.Location = new System.Drawing.Point(638, 446);
             this.multiplyOnBox2.Name = "multiplyOnBox2";
             this.multiplyOnBox2.Size = new System.Drawing.Size(106, 23);
             this.multiplyOnBox2.TabIndex = 88;
@@ -1611,7 +1617,7 @@ namespace OOP_Lab_5
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1165, 496);
+            this.ClientSize = new System.Drawing.Size(1165, 543);
             this.Controls.Add(this.sizeBox);
             this.Controls.Add(this.multiplyOnBox2);
             this.Controls.Add(this.multiplyOnBox1);
@@ -1633,9 +1639,7 @@ namespace OOP_Lab_5
             this.Controls.Add(this.detBox1);
             this.Controls.Add(this.transposeBox1);
             this.Controls.Add(this.saveBox3);
-            this.Controls.Add(this.loadBox3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.saveButton3);
             this.Controls.Add(this.loadFromDbButton2);
             this.Controls.Add(this.loadBox2);
             this.Controls.Add(this.saveBox2);
@@ -1644,8 +1648,8 @@ namespace OOP_Lab_5
             this.Controls.Add(this.loadBox1);
             this.Controls.Add(this.saveBox1);
             this.Controls.Add(this.saveToDbButton1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pasteButton3);
+            this.Controls.Add(this.copyButton3);
             this.Controls.Add(this.pasteButton2);
             this.Controls.Add(this.copyButton2);
             this.Controls.Add(this.pasteButton1);
@@ -1664,7 +1668,7 @@ namespace OOP_Lab_5
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "Form";
-            this.Text = "123";
+            this.Text = "Matrix Calculator";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form_MouseUp);
@@ -1804,8 +1808,8 @@ namespace OOP_Lab_5
         private System.Windows.Forms.Button pasteButton1;
         private System.Windows.Forms.Button pasteButton2;
         private System.Windows.Forms.Button copyButton2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button pasteButton3;
+        private System.Windows.Forms.Button copyButton3;
         private System.Windows.Forms.Button saveToDbButton1;
         private System.Windows.Forms.TextBox saveBox1;
         private System.Windows.Forms.TextBox loadBox1;
@@ -1814,9 +1818,7 @@ namespace OOP_Lab_5
         private System.Windows.Forms.TextBox loadBox2;
         private System.Windows.Forms.TextBox saveBox2;
         private System.Windows.Forms.Button saveToDbButton2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox loadBox3;
+        private System.Windows.Forms.Button saveButton3;
         private System.Windows.Forms.TextBox saveBox3;
         private System.Windows.Forms.ComboBox inverseBox1;
         private System.Windows.Forms.ComboBox detBox1;
@@ -1839,6 +1841,9 @@ namespace OOP_Lab_5
         private System.Windows.Forms.TextBox multiplyOnBox1;
         private System.Windows.Forms.TextBox multiplyOnBox2;
         private System.Windows.Forms.ComboBox sizeBox;
+        private System.Windows.Forms.Button st;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
