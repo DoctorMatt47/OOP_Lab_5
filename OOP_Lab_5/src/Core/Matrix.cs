@@ -146,6 +146,26 @@ namespace OOP_Lab_5.Core
             }
         }
 
+        public override bool Equals(object otherObject)
+        {
+            if (otherObject is Matrix other)
+            {
+                if (Count != other.Count)
+                    return false;
+
+                for (int i = 0; i < Count; i++)
+                {
+                    for (int j = 0; j < Count; j++)
+                    {
+                        if (this[i, j] != other[i, j])
+                            return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
         public List<List<long>> GetList() => new List<List<long>>(_matrix);
 
         public long[,] GetArray()
