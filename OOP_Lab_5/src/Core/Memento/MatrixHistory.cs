@@ -9,16 +9,16 @@ namespace OOP_Lab_5.Core.Memento
     public class MatrixHistory
     {
         private Stack<IMatrixMemento> _history = new Stack<IMatrixMemento>();
-        private Matrix _matrix = null;
+        public Matrix Matrix { get; set; }
 
         public MatrixHistory(Matrix matrix)
         {
-            _matrix = matrix;
+            Matrix = matrix;
         }
 
         public void Backup()
         {
-            _history.Push(_matrix.Save());
+            _history.Push(Matrix.Save());
         }
 
         public void Undo()
@@ -26,7 +26,7 @@ namespace OOP_Lab_5.Core.Memento
             if (_history.Count == 0)
                 return;
 
-            _history.Pop();
+            Matrix.Restore(_history.Pop());
         }
     }
 }
