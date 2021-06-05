@@ -5,6 +5,7 @@ using OOP_Lab_5.Core.Algorithms;
 using OOP_Lab_5.Data.Entities;
 using OOP_Lab_5.Data;
 using System.Data;
+using OOP_Lab_5.Core.Prototype;
 
 namespace OOP_Lab_5
 {
@@ -86,12 +87,47 @@ namespace OOP_Lab_5
             {
                 throw new DataException("Object with that id was not found");
             }
+            _history.Backup();
             Matrix = matrixEntity.ToMatrix();
+        }
+
+        public void ChangeSize(int size)
+        {
+            _history.Backup();
+            Matrix = Matrix.ChangeCount(size);
+        }
+
+        public IPrototype Copy()
+        {
+            return Matrix.Clone();
+        }
+
+        public void Paste(IPrototype matrix)
+        {
+            _history.Backup();
+            Matrix = (Matrix)matrix;
         }
 
         public void Undo()
         {
             _history.Undo();
+        }
+
+        public Matrix Add(Matrix other)
+        {
+            return Matrix + other;
+        }
+
+        public Matrix Diff(Matrix other)
+        {
+            return Matrix - other;
+        }
+
+        public Matrix Multiply(Matrix other, IMultiply mul)
+        {
+            Matrix.MultiplyAlgorithm = mul;
+            other.MultiplyAlgorithm = mul;
+            return Matrix * other;
         }
     }
 }
