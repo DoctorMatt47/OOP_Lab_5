@@ -4,6 +4,12 @@
     {
         public long Execute(Matrix matrix)
         {
+            if (matrix.Count == 1)
+                return matrix[0, 0];
+
+            if (matrix.Count == 2)
+                return matrix[0, 0] * matrix[1, 1] - matrix[1, 0] * matrix[0, 1];
+
             long det = 0;
             for (int i = 0; i < matrix.Count; i++)
             {
