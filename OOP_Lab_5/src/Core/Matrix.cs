@@ -116,7 +116,7 @@ namespace OOP_Lab_5.Core
             return left.MultiplyAlgorithm.Execute(left, right);
         }
 
-        public static Matrix operator *(Matrix left, int right)
+        public static Matrix operator *(Matrix left, long right)
         {
             var retMatrix = new Matrix(left.Count);
             for (int i = 0; i < left.Count; i++)
@@ -129,7 +129,7 @@ namespace OOP_Lab_5.Core
             return retMatrix;
         }
 
-        public static Matrix operator *(int left, Matrix right)
+        public static Matrix operator *(long left, Matrix right)
         {
             return right * left;
         }
