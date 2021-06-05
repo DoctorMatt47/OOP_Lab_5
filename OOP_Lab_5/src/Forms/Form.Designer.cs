@@ -155,7 +155,6 @@ namespace OOP_Lab_5
             this.pasteButton1 = new System.Windows.Forms.Button();
             this.pasteButton2 = new System.Windows.Forms.Button();
             this.copyButton2 = new System.Windows.Forms.Button();
-            this.pasteButton3 = new System.Windows.Forms.Button();
             this.copyButton3 = new System.Windows.Forms.Button();
             this.saveToDbButton1 = new System.Windows.Forms.Button();
             this.saveBox1 = new System.Windows.Forms.TextBox();
@@ -178,18 +177,26 @@ namespace OOP_Lab_5
             this.triangularButton2 = new System.Windows.Forms.Button();
             this.rankButton1 = new System.Windows.Forms.Button();
             this.rankButton2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.triangularBox1 = new System.Windows.Forms.ComboBox();
+            this.rankBox1 = new System.Windows.Forms.ComboBox();
+            this.triangularBox2 = new System.Windows.Forms.ComboBox();
+            this.rankBox2 = new System.Windows.Forms.ComboBox();
             this.MultiplyOnButton1 = new System.Windows.Forms.Button();
             this.MultiplyOnButton2 = new System.Windows.Forms.Button();
             this.multiplyOnBox1 = new System.Windows.Forms.TextBox();
             this.multiplyOnBox2 = new System.Windows.Forms.TextBox();
             this.sizeBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.detLabel = new System.Windows.Forms.Label();
+            this.rankLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // detButton
@@ -202,6 +209,7 @@ namespace OOP_Lab_5
             this.detButton.TabIndex = 39;
             this.detButton.Text = "Det";
             this.detButton.UseVisualStyleBackColor = true;
+            this.detButton.Click += new System.EventHandler(this.detButton_Click);
             // 
             // squareButton
             // 
@@ -212,6 +220,7 @@ namespace OOP_Lab_5
             this.squareButton.TabIndex = 38;
             this.squareButton.Text = "Square";
             this.squareButton.UseVisualStyleBackColor = true;
+            this.squareButton.Click += new System.EventHandler(this.squareButton_Click);
             // 
             // transposeButton
             // 
@@ -578,6 +587,7 @@ namespace OOP_Lab_5
             this.button1.TabIndex = 90;
             this.button1.Text = "←";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // matrix155
             // 
@@ -887,6 +897,7 @@ namespace OOP_Lab_5
             this.button2.TabIndex = 91;
             this.button2.Text = "←";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // matrix255
             // 
@@ -1149,6 +1160,7 @@ namespace OOP_Lab_5
             this.inverseButton2.TabIndex = 41;
             this.inverseButton2.Text = "Transpose";
             this.inverseButton2.UseVisualStyleBackColor = true;
+            this.inverseButton2.Click += new System.EventHandler(this.inverseButton2_Click);
             // 
             // detButton2
             // 
@@ -1160,6 +1172,7 @@ namespace OOP_Lab_5
             this.detButton2.TabIndex = 42;
             this.detButton2.Text = "Det";
             this.detButton2.UseVisualStyleBackColor = true;
+            this.detButton2.Click += new System.EventHandler(this.detButton2_Click);
             // 
             // squareButton2
             // 
@@ -1170,6 +1183,7 @@ namespace OOP_Lab_5
             this.squareButton2.TabIndex = 43;
             this.squareButton2.Text = "Square";
             this.squareButton2.UseVisualStyleBackColor = true;
+            this.squareButton2.Click += new System.EventHandler(this.squareButton2_Click);
             // 
             // multiplyButton
             // 
@@ -1180,6 +1194,7 @@ namespace OOP_Lab_5
             this.multiplyButton.TabIndex = 44;
             this.multiplyButton.Text = "Multiply";
             this.multiplyButton.UseVisualStyleBackColor = true;
+            this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
             // 
             // additionButton
             // 
@@ -1190,6 +1205,7 @@ namespace OOP_Lab_5
             this.additionButton.TabIndex = 45;
             this.additionButton.Text = "Addition";
             this.additionButton.UseVisualStyleBackColor = true;
+            this.additionButton.Click += new System.EventHandler(this.additionButton_Click);
             // 
             // differenceButton
             // 
@@ -1200,6 +1216,7 @@ namespace OOP_Lab_5
             this.differenceButton.TabIndex = 46;
             this.differenceButton.Text = "Difference";
             this.differenceButton.UseVisualStyleBackColor = true;
+            this.differenceButton.Click += new System.EventHandler(this.differenceButton_Click);
             // 
             // copyButton1
             // 
@@ -1207,12 +1224,13 @@ namespace OOP_Lab_5
             this.copyButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.copyButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.copyButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.copyButton1.Location = new System.Drawing.Point(34, 66);
+            this.copyButton1.Location = new System.Drawing.Point(34, 95);
             this.copyButton1.Name = "copyButton1";
             this.copyButton1.Size = new System.Drawing.Size(106, 23);
             this.copyButton1.TabIndex = 52;
             this.copyButton1.Text = "Copy";
             this.copyButton1.UseVisualStyleBackColor = false;
+            this.copyButton1.Click += new System.EventHandler(this.copyButton1_Click);
             // 
             // pasteButton1
             // 
@@ -1220,12 +1238,13 @@ namespace OOP_Lab_5
             this.pasteButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pasteButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pasteButton1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pasteButton1.Location = new System.Drawing.Point(34, 95);
+            this.pasteButton1.Location = new System.Drawing.Point(34, 66);
             this.pasteButton1.Name = "pasteButton1";
             this.pasteButton1.Size = new System.Drawing.Size(106, 23);
             this.pasteButton1.TabIndex = 53;
             this.pasteButton1.Text = "Paste";
             this.pasteButton1.UseVisualStyleBackColor = false;
+            this.pasteButton1.Click += new System.EventHandler(this.pasteButton1_Click);
             // 
             // pasteButton2
             // 
@@ -1239,6 +1258,7 @@ namespace OOP_Lab_5
             this.pasteButton2.TabIndex = 55;
             this.pasteButton2.Text = "Paste";
             this.pasteButton2.UseVisualStyleBackColor = false;
+            this.pasteButton2.Click += new System.EventHandler(this.pasteButton2_Click);
             // 
             // copyButton2
             // 
@@ -1252,19 +1272,7 @@ namespace OOP_Lab_5
             this.copyButton2.TabIndex = 54;
             this.copyButton2.Text = "Copy";
             this.copyButton2.UseVisualStyleBackColor = false;
-            // 
-            // pasteButton3
-            // 
-            this.pasteButton3.BackColor = System.Drawing.Color.LightCyan;
-            this.pasteButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pasteButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pasteButton3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pasteButton3.Location = new System.Drawing.Point(794, 66);
-            this.pasteButton3.Name = "pasteButton3";
-            this.pasteButton3.Size = new System.Drawing.Size(106, 23);
-            this.pasteButton3.TabIndex = 57;
-            this.pasteButton3.Text = "Paste";
-            this.pasteButton3.UseVisualStyleBackColor = false;
+            this.copyButton2.Click += new System.EventHandler(this.copyButton2_Click);
             // 
             // copyButton3
             // 
@@ -1272,12 +1280,13 @@ namespace OOP_Lab_5
             this.copyButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.copyButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.copyButton3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.copyButton3.Location = new System.Drawing.Point(794, 95);
+            this.copyButton3.Location = new System.Drawing.Point(794, 66);
             this.copyButton3.Name = "copyButton3";
-            this.copyButton3.Size = new System.Drawing.Size(106, 23);
+            this.copyButton3.Size = new System.Drawing.Size(106, 52);
             this.copyButton3.TabIndex = 56;
             this.copyButton3.Text = "Copy";
             this.copyButton3.UseVisualStyleBackColor = false;
+            this.copyButton3.Click += new System.EventHandler(this.copyButton3_Click);
             // 
             // saveToDbButton1
             // 
@@ -1464,6 +1473,7 @@ namespace OOP_Lab_5
             // triangularButton1
             // 
             this.triangularButton1.BackColor = System.Drawing.Color.LightCyan;
+            this.triangularButton1.Enabled = false;
             this.triangularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.triangularButton1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.triangularButton1.Location = new System.Drawing.Point(34, 406);
@@ -1472,10 +1482,12 @@ namespace OOP_Lab_5
             this.triangularButton1.TabIndex = 77;
             this.triangularButton1.Text = "Triangular";
             this.triangularButton1.UseVisualStyleBackColor = false;
+            this.triangularButton1.Click += new System.EventHandler(this.triangularButton1_Click);
             // 
             // triangularButton2
             // 
             this.triangularButton2.BackColor = System.Drawing.Color.LightCyan;
+            this.triangularButton2.Enabled = false;
             this.triangularButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.triangularButton2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.triangularButton2.Location = new System.Drawing.Point(414, 406);
@@ -1484,6 +1496,7 @@ namespace OOP_Lab_5
             this.triangularButton2.TabIndex = 78;
             this.triangularButton2.Text = "Triangular";
             this.triangularButton2.UseVisualStyleBackColor = false;
+            this.triangularButton2.Click += new System.EventHandler(this.triangularButton2_Click);
             // 
             // rankButton1
             // 
@@ -1496,6 +1509,7 @@ namespace OOP_Lab_5
             this.rankButton1.TabIndex = 79;
             this.rankButton1.Text = "Rank";
             this.rankButton1.UseVisualStyleBackColor = false;
+            this.rankButton1.Click += new System.EventHandler(this.rankButton1_Click);
             // 
             // rankButton2
             // 
@@ -1508,54 +1522,55 @@ namespace OOP_Lab_5
             this.rankButton2.TabIndex = 80;
             this.rankButton2.Text = "Rank";
             this.rankButton2.UseVisualStyleBackColor = false;
+            this.rankButton2.Click += new System.EventHandler(this.rankButton2_Click);
             // 
-            // comboBox1
+            // triangularBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.triangularBox1.FormattingEnabled = true;
+            this.triangularBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox1.Location = new System.Drawing.Point(34, 446);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 23);
-            this.comboBox1.TabIndex = 81;
-            this.comboBox1.Text = "Native";
+            this.triangularBox1.Location = new System.Drawing.Point(34, 446);
+            this.triangularBox1.Name = "triangularBox1";
+            this.triangularBox1.Size = new System.Drawing.Size(106, 23);
+            this.triangularBox1.TabIndex = 81;
+            this.triangularBox1.Text = "Native";
             // 
-            // comboBox2
+            // rankBox1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.rankBox1.FormattingEnabled = true;
+            this.rankBox1.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox2.Location = new System.Drawing.Point(146, 446);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(106, 23);
-            this.comboBox2.TabIndex = 82;
-            this.comboBox2.Text = "Native";
+            this.rankBox1.Location = new System.Drawing.Point(146, 446);
+            this.rankBox1.Name = "rankBox1";
+            this.rankBox1.Size = new System.Drawing.Size(106, 23);
+            this.rankBox1.TabIndex = 82;
+            this.rankBox1.Text = "Native";
             // 
-            // comboBox3
+            // triangularBox2
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.triangularBox2.FormattingEnabled = true;
+            this.triangularBox2.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox3.Location = new System.Drawing.Point(414, 446);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(106, 23);
-            this.comboBox3.TabIndex = 83;
-            this.comboBox3.Text = "Native";
+            this.triangularBox2.Location = new System.Drawing.Point(414, 446);
+            this.triangularBox2.Name = "triangularBox2";
+            this.triangularBox2.Size = new System.Drawing.Size(106, 23);
+            this.triangularBox2.TabIndex = 83;
+            this.triangularBox2.Text = "Native";
             // 
-            // comboBox4
+            // rankBox2
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.rankBox2.FormattingEnabled = true;
+            this.rankBox2.Items.AddRange(new object[] {
             "Native",
             "Library"});
-            this.comboBox4.Location = new System.Drawing.Point(526, 446);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(106, 23);
-            this.comboBox4.TabIndex = 84;
-            this.comboBox4.Text = "Native";
+            this.rankBox2.Location = new System.Drawing.Point(526, 446);
+            this.rankBox2.Name = "rankBox2";
+            this.rankBox2.Size = new System.Drawing.Size(106, 23);
+            this.rankBox2.TabIndex = 84;
+            this.rankBox2.Text = "Native";
             // 
             // MultiplyOnButton1
             // 
@@ -1568,6 +1583,7 @@ namespace OOP_Lab_5
             this.MultiplyOnButton1.TabIndex = 85;
             this.MultiplyOnButton1.Text = "Multiply on";
             this.MultiplyOnButton1.UseVisualStyleBackColor = false;
+            this.MultiplyOnButton1.Click += new System.EventHandler(this.MultiplyOnButton1_Click);
             // 
             // MultiplyOnButton2
             // 
@@ -1580,6 +1596,7 @@ namespace OOP_Lab_5
             this.MultiplyOnButton2.TabIndex = 86;
             this.MultiplyOnButton2.Text = "Multiply on";
             this.MultiplyOnButton2.UseVisualStyleBackColor = false;
+            this.MultiplyOnButton2.Click += new System.EventHandler(this.MultiplyOnButton2_Click);
             // 
             // multiplyOnBox1
             // 
@@ -1611,21 +1628,93 @@ namespace OOP_Lab_5
             this.sizeBox.Text = "6X6";
             this.sizeBox.SelectedIndexChanged += new System.EventHandler(this.sizeBox_SelectedIndexChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(22, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 30);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "Determinant:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(782, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 30);
+            this.label2.TabIndex = 91;
+            this.label2.Text = "Time:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(402, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 30);
+            this.label3.TabIndex = 92;
+            this.label3.Text = "Rank:";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Azure;
+            this.panel4.Controls.Add(this.timeLabel);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.detLabel);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.rankLabel);
+            this.panel4.Location = new System.Drawing.Point(12, 475);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1133, 65);
+            this.panel4.TabIndex = 93;
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timeLabel.Location = new System.Drawing.Point(851, 16);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(0, 30);
+            this.timeLabel.TabIndex = 95;
+            // 
+            // detLabel
+            // 
+            this.detLabel.AutoSize = true;
+            this.detLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.detLabel.Location = new System.Drawing.Point(162, 16);
+            this.detLabel.Name = "detLabel";
+            this.detLabel.Size = new System.Drawing.Size(0, 30);
+            this.detLabel.TabIndex = 93;
+            // 
+            // rankLabel
+            // 
+            this.rankLabel.AutoSize = true;
+            this.rankLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rankLabel.Location = new System.Drawing.Point(472, 16);
+            this.rankLabel.Name = "rankLabel";
+            this.rankLabel.Size = new System.Drawing.Size(0, 30);
+            this.rankLabel.TabIndex = 94;
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1165, 543);
+            this.ClientSize = new System.Drawing.Size(1165, 552);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.sizeBox);
             this.Controls.Add(this.multiplyOnBox2);
             this.Controls.Add(this.multiplyOnBox1);
             this.Controls.Add(this.MultiplyOnButton2);
             this.Controls.Add(this.MultiplyOnButton1);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.rankBox2);
+            this.Controls.Add(this.triangularBox2);
+            this.Controls.Add(this.rankBox1);
+            this.Controls.Add(this.triangularBox1);
             this.Controls.Add(this.rankButton2);
             this.Controls.Add(this.rankButton1);
             this.Controls.Add(this.triangularButton2);
@@ -1647,7 +1736,6 @@ namespace OOP_Lab_5
             this.Controls.Add(this.loadBox1);
             this.Controls.Add(this.saveBox1);
             this.Controls.Add(this.saveToDbButton1);
-            this.Controls.Add(this.pasteButton3);
             this.Controls.Add(this.copyButton3);
             this.Controls.Add(this.pasteButton2);
             this.Controls.Add(this.copyButton2);
@@ -1677,6 +1765,8 @@ namespace OOP_Lab_5
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1807,7 +1897,6 @@ namespace OOP_Lab_5
         private System.Windows.Forms.Button pasteButton1;
         private System.Windows.Forms.Button pasteButton2;
         private System.Windows.Forms.Button copyButton2;
-        private System.Windows.Forms.Button pasteButton3;
         private System.Windows.Forms.Button copyButton3;
         private System.Windows.Forms.Button saveToDbButton1;
         private System.Windows.Forms.TextBox saveBox1;
@@ -1831,10 +1920,10 @@ namespace OOP_Lab_5
         private System.Windows.Forms.Button triangularButton2;
         private System.Windows.Forms.Button rankButton1;
         private System.Windows.Forms.Button rankButton2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox triangularBox1;
+        private System.Windows.Forms.ComboBox rankBox1;
+        private System.Windows.Forms.ComboBox triangularBox2;
+        private System.Windows.Forms.ComboBox rankBox2;
         private System.Windows.Forms.Button MultiplyOnButton1;
         private System.Windows.Forms.Button MultiplyOnButton2;
         private System.Windows.Forms.TextBox multiplyOnBox1;
@@ -1843,6 +1932,13 @@ namespace OOP_Lab_5
         private System.Windows.Forms.Button st;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label detLabel;
+        private System.Windows.Forms.Label rankLabel;
     }
 }
 
