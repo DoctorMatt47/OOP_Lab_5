@@ -2,7 +2,7 @@
 
 namespace OOP_Lab_5.Core.Algorithms
 {
-    public class LibraryMultiply
+    public class LibraryMultiply : IMultiply
     {
         public Matrix Execute(Matrix left, Matrix right)
         {
