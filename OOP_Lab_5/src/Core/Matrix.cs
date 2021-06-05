@@ -166,6 +166,11 @@ namespace OOP_Lab_5.Core
             return false;
         }
 
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<List<long>> GetList() => new List<List<long>>(_matrix);
 
         public long[,] GetArray()
