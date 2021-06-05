@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP_Lab_5;
-using OOP_Lab_5.Core;
 
 namespace OOP_Lab_5
 {
@@ -19,7 +17,6 @@ namespace OOP_Lab_5
         private List<List<MaskedTextBox>> _matrix1;
         private List<List<MaskedTextBox>> _matrix2;
         private List<List<TextBox>> _res;
-        private MatrixFacade _facade;
 
         public Form()
         {
@@ -109,11 +106,6 @@ namespace OOP_Lab_5
         {
             HideMatrixes();
             ShowMatrixes(((ComboBox)sender).SelectedIndex + 2);
-        }
-
-        private void transposeButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

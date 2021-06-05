@@ -224,7 +224,6 @@ namespace OOP_Lab_5
             this.transposeButton.TabIndex = 37;
             this.transposeButton.Text = "Transpose";
             this.transposeButton.UseVisualStyleBackColor = false;
-            this.transposeButton.Click += new System.EventHandler(this.transposeButton_Click);
             // 
             // panel2
             // 
@@ -1383,7 +1382,8 @@ namespace OOP_Lab_5
             // 
             this.transposeBox1.FormattingEnabled = true;
             this.transposeBox1.Items.AddRange(new object[] {
-            "Native"});
+            "Native",
+            "Library"});
             this.transposeBox1.Location = new System.Drawing.Point(34, 377);
             this.transposeBox1.Name = "transposeBox1";
             this.transposeBox1.Size = new System.Drawing.Size(106, 23);
@@ -1418,7 +1418,8 @@ namespace OOP_Lab_5
             // 
             this.transposeBox2.FormattingEnabled = true;
             this.transposeBox2.Items.AddRange(new object[] {
-            "Native"});
+            "Native",
+            "Library"});
             this.transposeBox2.Location = new System.Drawing.Point(414, 377);
             this.transposeBox2.Name = "transposeBox2";
             this.transposeBox2.Size = new System.Drawing.Size(106, 23);
