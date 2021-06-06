@@ -10,22 +10,22 @@ namespace OOP_Lab_5.Core.Iterators
     public class MatrixEnumenator : IEnumerator
     {
         private Matrix _matrix;
-        private int _i = -1;
-        private int _j = -1;
+        private int _column = -1;
+        private int _row = -1;
 
         public object Current
         {
             get
             {
-                if (_j == -1 || _i == -1)
+                if (_row == -1 || _column == -1)
                     throw new InvalidOperationException();
-                return _matrix[_i, _j];
+                return _matrix[_row, _column];
             }
             set
             {
-                if (_j == -1 || _i == -1)
+                if (_row == -1 || _column == -1)
                     throw new InvalidOperationException();
-                _matrix[_i, _j] = (long)value;
+                _matrix[_row, _column] = (long)value;
             }
         }
 
@@ -33,17 +33,33 @@ namespace OOP_Lab_5.Core.Iterators
 
         public bool MoveNext() 
         {
-            _i = _i < _matrix.Count - 1 ? _i++ : 0;
-            _j = _j < _matrix.Count - 1 ? _j++ : -1;
-            if (_j == -1)
+            if (_column == -1 && _row == -1)
+            {
+                _column = 0;
+                _row = 0;
+            }
+            else if (_column < _matrix.Count - 1)
+            {
+                _column++;
+            }
+            else if (_column == _matrix.Count - 1 && _row != _matrix.Count - 1)
+            {
+                _column = 0;
+                _row++;
+            }
+            else if (_column == _matrix.Count - 1 && _row == _matrix.Count - 1)
+            {
+                _column = -1;
+                _row = -1;
                 return false;
+            }
             return true;
         }
 
         public void Reset()
         {
-            _i = -1;
-            _j = -1;
+            _column = -1;
+            _row = -1;
         }
     }
 }
