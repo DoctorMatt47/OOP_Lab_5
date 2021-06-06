@@ -254,7 +254,8 @@ namespace OOP_Lab_5.Core
 
         public IMatrixMemento Save()
         {
-            return new MatrixMemento(_matrix);
+            var newMatrix = Clone();
+            return new MatrixMemento(((Matrix)newMatrix)._matrix);
         }
 
         public void Restore(IMatrixMemento memento)
