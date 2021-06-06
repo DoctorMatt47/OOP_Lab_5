@@ -8,9 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OOP_Lab_5;
+using OOP_Lab_5.Facade;
 using OOP_Lab_5.Core;
 using OOP_Lab_5.Core.Algorithms;
 using OOP_Lab_5.Core.Prototype;
+using OOP_Lab_5.Decorators;
 
 namespace OOP_Lab_5
 {
@@ -21,8 +23,8 @@ namespace OOP_Lab_5
         private List<List<MaskedTextBox>> _leftBoxes;
         private List<List<MaskedTextBox>> _rightBoxes;
         private List<List<TextBox>> _resultBoxes;
-        private MatrixFacade _left;
-        private MatrixFacade _right;
+        private IMatrixFacade _left;
+        private IMatrixFacade _right;
         private Matrix _result;
         private IPrototype _buffer;
         private int _size = 6;
@@ -31,8 +33,8 @@ namespace OOP_Lab_5
         {
             InitializeComponent();
             InitializeMatrixes();
-            _left = new MatrixFacade(new Matrix(_size));
-            _right = new MatrixFacade(new Matrix(_size));
+            _left = new TimeDecorator(new MatrixFacade(new Matrix(_size)));
+            _right = new TimeDecorator(new MatrixFacade(new Matrix(_size)));
             _result = new Matrix(_size);
         }
 
@@ -83,6 +85,9 @@ namespace OOP_Lab_5
                     _resultBoxes[i][j].Hide();
                 }
             }
+            detLabel.Text = "";
+            rankLabel.Text = "";
+            timeLabel.Text = "";
         }
 
         private void ShowMatrixes(int k)
@@ -97,8 +102,8 @@ namespace OOP_Lab_5
                     _resultBoxes[i][j].Show();
                 }
             }
-            _left = new MatrixFacade(new Matrix(_size));
-            _right = new MatrixFacade(new Matrix(_size));
+            _left = new TimeDecorator(new MatrixFacade(new Matrix(_size)));
+            _right = new TimeDecorator(new MatrixFacade(new Matrix(_size)));
             _result = new Matrix(_size);
         }
 
@@ -165,25 +170,41 @@ namespace OOP_Lab_5
             TakeBoxes(_left.Matrix, _leftBoxes);
             _left.Transpose();
             RefreshBoxes(_left.Matrix, _leftBoxes);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             _left.Undo();
             RefreshBoxes(_left.Matrix, _leftBoxes);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void inverseButton2_Click(object sender, EventArgs e)
         {
             TakeBoxes(_right.Matrix, _rightBoxes);
-            _left.Transpose();
+            _right.Transpose();
             RefreshBoxes(_right.Matrix, _rightBoxes);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             _right.Undo();
             RefreshBoxes(_right.Matrix, _rightBoxes);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void detButton_Click(object sender, EventArgs e)
@@ -196,6 +217,10 @@ namespace OOP_Lab_5
                 _ => null
             };
             detLabel.Text = _left.Determinant(algorithm).ToString();
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void detButton2_Click(object sender, EventArgs e)
@@ -208,6 +233,10 @@ namespace OOP_Lab_5
                 _ => null
             };
             detLabel.Text = _right.Determinant(algorithm).ToString();
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            };
         }
 
         private void squareButton_Click(object sender, EventArgs e)
@@ -221,6 +250,10 @@ namespace OOP_Lab_5
             };
             _left.Square(algorithm);
             RefreshBoxes(_left.Matrix, _leftBoxes);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void squareButton2_Click(object sender, EventArgs e)
@@ -234,6 +267,10 @@ namespace OOP_Lab_5
             };
             _right.Square(algorithm);
             RefreshBoxes(_right.Matrix, _rightBoxes);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void triangularButton1_Click(object sender, EventArgs e)
@@ -247,6 +284,10 @@ namespace OOP_Lab_5
             };
             _left.Triangular(algorithm);
             RefreshBoxes(_left.Matrix, _leftBoxes);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void triangularButton2_Click(object sender, EventArgs e)
@@ -260,6 +301,10 @@ namespace OOP_Lab_5
             };
             _right.Triangular(algorithm);
             RefreshBoxes(_right.Matrix, _rightBoxes);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void rankButton1_Click(object sender, EventArgs e)
@@ -272,6 +317,10 @@ namespace OOP_Lab_5
                 _ => null
             };
             rankLabel.Text = _left.Rank(algorithm).ToString();
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void rankButton2_Click(object sender, EventArgs e)
@@ -284,6 +333,10 @@ namespace OOP_Lab_5
                 _ => null
             };
             rankLabel.Text = _right.Rank(algorithm).ToString();
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void MultiplyOnButton1_Click(object sender, EventArgs e)
@@ -294,6 +347,10 @@ namespace OOP_Lab_5
                 _left.MultiplyOnScalar(scalar);
             }
             RefreshBoxes(_left.Matrix, _leftBoxes);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void MultiplyOnButton2_Click(object sender, EventArgs e)
@@ -304,6 +361,10 @@ namespace OOP_Lab_5
                 _right.MultiplyOnScalar(scalar);
             }
             RefreshBoxes(_right.Matrix, _rightBoxes);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
@@ -318,6 +379,10 @@ namespace OOP_Lab_5
             };
             _result = _left.Multiply(_right.Matrix, algorithm);
             RefreshResultBoxes();
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void differenceButton_Click(object sender, EventArgs e)
@@ -326,6 +391,10 @@ namespace OOP_Lab_5
             TakeBoxes(_right.Matrix, _rightBoxes);
             _result = _left.Diff(_right.Matrix);
             RefreshResultBoxes();
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void additionButton_Click(object sender, EventArgs e)
@@ -334,12 +403,20 @@ namespace OOP_Lab_5
             TakeBoxes(_right.Matrix, _rightBoxes);
             _result = _left.Add(_right.Matrix);
             RefreshResultBoxes();
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void copyButton1_Click(object sender, EventArgs e)
         {
             TakeBoxes(_left.Matrix, _leftBoxes);
             _buffer = _left.Copy();
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
 
         private void copyButton2_Click(object sender, EventArgs e)
@@ -363,6 +440,66 @@ namespace OOP_Lab_5
         {
             _right.Paste(_buffer);
             RefreshBoxes(_right.Matrix, _rightBoxes);
+        }
+
+        private void saveToDbButton1_Click(object sender, EventArgs e)
+        {
+            TakeBoxes(_left.Matrix, _leftBoxes);
+            _left.SaveToDb(saveBox1.Text);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
+        }
+
+        private void saveToDbButton2_Click(object sender, EventArgs e)
+        {
+            TakeBoxes(_right.Matrix, _rightBoxes);
+            _right.SaveToDb(saveBox2.Text);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
+        }
+
+        private void saveButton3_Click(object sender, EventArgs e)
+        {
+            var facade = new MatrixFacade(_result);
+            facade.SaveToDb(saveBox3.Text);
+        }
+
+        private void loadFromDbButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _left.LoadFromDb(loadBox1.Text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            RefreshBoxes(_left.Matrix, _leftBoxes);
+            if (_left is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
+        }
+
+        private void loadFromDbButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _right.LoadFromDb(loadBox2.Text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            RefreshBoxes(_right.Matrix, _rightBoxes);
+            if (_right is TimeDecorator timeDecorator)
+            {
+                timeLabel.Text = timeDecorator.Time + " ms";
+            }
         }
     }
 }

@@ -388,6 +388,7 @@ namespace OOP_Lab_5
             // 
             this.res05.Location = new System.Drawing.Point(302, 19);
             this.res05.Name = "res05";
+            this.res05.ReadOnly = true;
             this.res05.Size = new System.Drawing.Size(50, 23);
             this.res05.TabIndex = 20;
             // 
@@ -395,6 +396,7 @@ namespace OOP_Lab_5
             // 
             this.res04.Location = new System.Drawing.Point(246, 19);
             this.res04.Name = "res04";
+            this.res04.ReadOnly = true;
             this.res04.Size = new System.Drawing.Size(50, 23);
             this.res04.TabIndex = 19;
             // 
@@ -402,6 +404,7 @@ namespace OOP_Lab_5
             // 
             this.res03.Location = new System.Drawing.Point(190, 19);
             this.res03.Name = "res03";
+            this.res03.ReadOnly = true;
             this.res03.Size = new System.Drawing.Size(50, 23);
             this.res03.TabIndex = 18;
             // 
@@ -514,6 +517,7 @@ namespace OOP_Lab_5
             // 
             this.res02.Location = new System.Drawing.Point(134, 19);
             this.res02.Name = "res02";
+            this.res02.ReadOnly = true;
             this.res02.Size = new System.Drawing.Size(50, 23);
             this.res02.TabIndex = 2;
             // 
@@ -521,6 +525,7 @@ namespace OOP_Lab_5
             // 
             this.res01.Location = new System.Drawing.Point(78, 19);
             this.res01.Name = "res01";
+            this.res01.ReadOnly = true;
             this.res01.Size = new System.Drawing.Size(50, 23);
             this.res01.TabIndex = 1;
             // 
@@ -528,6 +533,7 @@ namespace OOP_Lab_5
             // 
             this.res00.Location = new System.Drawing.Point(22, 19);
             this.res00.Name = "res00";
+            this.res00.ReadOnly = true;
             this.res00.Size = new System.Drawing.Size(50, 23);
             this.res00.TabIndex = 0;
             // 
@@ -1300,6 +1306,7 @@ namespace OOP_Lab_5
             this.saveToDbButton1.TabIndex = 58;
             this.saveToDbButton1.Text = "Save";
             this.saveToDbButton1.UseVisualStyleBackColor = false;
+            this.saveToDbButton1.Click += new System.EventHandler(this.saveToDbButton1_Click);
             // 
             // saveBox1
             // 
@@ -1327,6 +1334,7 @@ namespace OOP_Lab_5
             this.loadFromDbButton1.TabIndex = 61;
             this.loadFromDbButton1.Text = "Load";
             this.loadFromDbButton1.UseVisualStyleBackColor = false;
+            this.loadFromDbButton1.Click += new System.EventHandler(this.loadFromDbButton1_Click);
             // 
             // loadFromDbButton2
             // 
@@ -1340,6 +1348,7 @@ namespace OOP_Lab_5
             this.loadFromDbButton2.TabIndex = 65;
             this.loadFromDbButton2.Text = "Load";
             this.loadFromDbButton2.UseVisualStyleBackColor = false;
+            this.loadFromDbButton2.Click += new System.EventHandler(this.loadFromDbButton2_Click);
             // 
             // loadBox2
             // 
@@ -1367,6 +1376,7 @@ namespace OOP_Lab_5
             this.saveToDbButton2.TabIndex = 62;
             this.saveToDbButton2.Text = "Save";
             this.saveToDbButton2.UseVisualStyleBackColor = false;
+            this.saveToDbButton2.Click += new System.EventHandler(this.saveToDbButton2_Click);
             // 
             // saveButton3
             // 
@@ -1380,6 +1390,7 @@ namespace OOP_Lab_5
             this.saveButton3.TabIndex = 66;
             this.saveButton3.Text = "Save";
             this.saveButton3.UseVisualStyleBackColor = false;
+            this.saveButton3.Click += new System.EventHandler(this.saveButton3_Click);
             // 
             // saveBox3
             // 
