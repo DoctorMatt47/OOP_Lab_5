@@ -432,12 +432,16 @@ namespace OOP_Lab_5
 
         private void pasteButton1_Click(object sender, EventArgs e)
         {
+            if (_buffer is null)
+                return;
             _left.Paste(_buffer);
             RefreshBoxes(_left.Matrix, _leftBoxes);
         }
 
         private void pasteButton2_Click(object sender, EventArgs e)
         {
+            if (_buffer is null)
+                return;
             _right.Paste(_buffer);
             RefreshBoxes(_right.Matrix, _rightBoxes);
         }
