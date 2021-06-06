@@ -6,10 +6,11 @@ using OOP_Lab_5.Data.Entities;
 using OOP_Lab_5.Data;
 using System.Data;
 using OOP_Lab_5.Core.Prototype;
+using OOP_Lab_5.Facade;
 
-namespace OOP_Lab_5
+namespace OOP_Lab_5.Facade
 {
-    public class MatrixFacade
+    public class MatrixFacade : IMatrixFacade
     {
         private readonly DatabaseContext _db = new DatabaseContext();
         private MatrixHistory _history;
@@ -26,104 +27,112 @@ namespace OOP_Lab_5
             }
         }
 
-        public MatrixFacade(Matrix left)
+        public MatrixFacade(Matrix matrix)
         {
-            _history = new MatrixHistory(left);
+            _history = new MatrixHistory(matrix);
         }
 
-        public void Transpose()
+        public virtual void Transpose()
         {
             _history.Backup();
             Matrix = Matrix.Transpose();
         }
 
-        public long Determinant(IFindDeterminant det)
+        public virtual long Determinant(IFindDeterminant det)
         {
             Matrix.FindDeterminantAlgorithm = det;
             return Matrix.FindDeterminant();
         }
 
-        public int Rank(IFindRank rank)
+        public virtual int Rank(IFindRank rank)
         {
             Matrix.FindRankAlgorithm = rank;
             return Matrix.FindRank();
         }
 
-        public void Square(IMultiply mul)
+        public virtual void Square(IMultiply mul)
         {
             _history.Backup();
             Matrix.MultiplyAlgorithm = mul;
             Matrix = Matrix.Square();
         }
 
-        public void Triangular(ITriangular triangular)
+        public virtual void Triangular(ITriangular triangular)
         {
             _history.Backup();
             Matrix.TriangularAlgorithm = triangular;
             Matrix = Matrix.Triangular();
         }
 
-        public void MultiplyOnScalar(long scalar)
+        public virtual void MultiplyOnScalar(long scalar)
         {
             _history.Backup();
             Matrix *= scalar;
         }
 
-        public void SaveToDb(string id)
+        public virtual void SaveToDb(string id)
         {
-            if (_db.Matrixes.Any(t => t.Id == id))
+            var oldEntity = _db.Matrixes.FirstOrDefault(t => t.Id == id);
+            if (oldEntity is not null)
             {
-                throw new DataException("Object with that id was not found");
+                oldEntity.Id = id;
+                oldEntity.Stringify(Matrix);
             }
-            var entity = new MatrixEntity(id, Matrix);
-            _db.Matrixes.Add(entity);
+            else
+            {
+                var newEntity = new MatrixEntity(id, Matrix);
+                _db.Matrixes.Add(newEntity);
+            }
             _db.SaveChanges();
         }
 
-        public void LoadFromDb(string id)
+        public virtual void LoadFromDb(string id)
         {
             var matrixEntity = _db.Matrixes.FirstOrDefault(t => t.Id == id);
             if (matrixEntity is null)
             {
                 throw new DataException("Object with that id was not found");
             }
-            _history.Backup();
-            Matrix = matrixEntity.ToMatrix();
+            if (Matrix.Count == matrixEntity.Count)
+            {
+                _history.Backup();
+                Matrix = matrixEntity.ToMatrix();
+            }
         }
 
-        public void ChangeSize(int size)
+        public virtual void ChangeSize(int size)
         {
             _history.Backup();
             Matrix = Matrix.ChangeCount(size);
         }
 
-        public IPrototype Copy()
+        public virtual IPrototype Copy()
         {
             return Matrix.Clone();
         }
 
-        public void Paste(IPrototype matrix)
+        public virtual void Paste(IPrototype matrix)
         {
             _history.Backup();
             Matrix = (Matrix)matrix;
         }
 
-        public void Undo()
+        public virtual void Undo()
         {
             _history.Undo();
         }
 
-        public Matrix Add(Matrix other)
+        public virtual Matrix Add(Matrix other)
         {
             return Matrix + other;
         }
 
-        public Matrix Diff(Matrix other)
+        public virtual Matrix Diff(Matrix other)
         {
             return Matrix - other;
         }
 
-        public Matrix Multiply(Matrix other, IMultiply mul)
+        public virtual Matrix Multiply(Matrix other, IMultiply mul)
         {
             Matrix.MultiplyAlgorithm = mul;
             other.MultiplyAlgorithm = mul;
