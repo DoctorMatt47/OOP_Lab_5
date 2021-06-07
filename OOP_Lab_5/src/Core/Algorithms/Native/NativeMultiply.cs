@@ -2,8 +2,18 @@
 
 namespace OOP_Lab_5.Core.Algorithms
 {
+    /// <summary>
+    /// Multiplies matrixes using native algorithm.
+    /// Implements IMultiply interface.
+    /// </summary>
     public class NativeMultiply : IMultiply
     {
+        /// <summary>
+        /// Gets new matrix that equals to multiplication of passed matrixes.
+        /// </summary>
+        /// <param name="left">Left matrix argument of matrix multiplication operation.</param>
+        /// <param name="right">Right matrix argument of matrix multiplication operation.</param>
+        /// <returns>New matrix that equals to multiplication of passed matrixes.</returns>
         public Matrix Execute(Matrix left, Matrix right)
         {
             if (left.Count != right.Count)

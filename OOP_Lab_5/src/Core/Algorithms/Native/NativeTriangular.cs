@@ -1,7 +1,16 @@
 ﻿namespace OOP_Lab_5.Core.Algorithms
 {
+    /// <summary>
+    /// Triangulars matrix using native algorithm.
+    /// Implements ITriangular interface.
+    /// </summary>
     public class NativeTriangular : ITriangular
     {
+        /// <summary>
+        /// Gets new triangular matrix of passed matrix.
+        /// </summary>
+        /// <param name="matrix">Matrix that will be triangulared</param>
+        /// <returns>New triangular matrix of passed matrix.</returns>
         public Matrix Execute(Matrix matrix)
         {
             var rank = matrix.Count;
