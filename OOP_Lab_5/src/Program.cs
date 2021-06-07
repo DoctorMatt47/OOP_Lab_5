@@ -1,13 +1,11 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP_Lab_5.Core;
-using OOP_Lab_5.Facade;
 
 namespace OOP_Lab_5
 {
+    /// <summary>
+    /// Represents entry point for the application.
+    /// </summary>
     static class Program
     {
         /// <summary>
