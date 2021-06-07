@@ -1,18 +1,34 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP_Lab_5.Core.Iterators
 {
+    /// <summary>
+    /// Represents matrix iterator.
+    /// Provides access to matrix elements.
+    /// Implements IEnumerator interface.
+    /// Implements iterator pattern.
+    /// </summary>
     public class MatrixEnumenator : IEnumerator
     {
+        /// <summary>
+        /// Encapsulated matrix instance.
+        /// </summary>
         private Matrix _matrix;
+
+        /// <summary>
+        /// Column iterator.
+        /// </summary>
         private int _column = -1;
+
+        /// <summary>
+        /// Row iterator.
+        /// </summary>
         private int _row = -1;
 
+        /// <summary>
+        /// Provides access to element with _row and _column indexes.
+        /// </summary>
         public object Current
         {
             get
@@ -29,8 +45,16 @@ namespace OOP_Lab_5.Core.Iterators
             }
         }
 
+        /// <summary>
+        /// Constructs MatrixEnumenator instance.
+        /// </summary>
+        /// <param name="matrix">Matrix to be encapsulated.</param>
         public MatrixEnumenator(Matrix matrix) => _matrix = matrix;
 
+        /// <summary>
+        /// Moves iterator to next position.
+        /// </summary>
+        /// <returns>False if collection is ended, true if is not</returns>
         public bool MoveNext() 
         {
             if (_column == -1 && _row == -1)
@@ -56,6 +80,9 @@ namespace OOP_Lab_5.Core.Iterators
             return true;
         }
 
+        /// <summary>
+        /// Moves iterator to begin.
+        /// </summary>
         public void Reset()
         {
             _column = -1;
