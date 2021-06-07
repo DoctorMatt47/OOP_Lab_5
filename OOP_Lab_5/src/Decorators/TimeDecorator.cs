@@ -6,12 +6,29 @@ using System.Diagnostics;
 
 namespace OOP_Lab_5.Decorators
 {
+    /// <summary>
+    /// Represents decorator for MatrixFacade class.
+    /// Measures time of algorithms.
+    /// Inherits MatrixFacadeDecorator class.
+    /// Implements decorator pattern.
+    /// </summary>
     public class TimeDecorator : MatrixFacadeDecorator
     {
+        /// <summary>
+        /// Time of last launched algorithm.
+        /// </summary>
         public long Time { get; private set; }
 
+        /// <summary>
+        /// Constructs TimeDecorator instance.
+        /// </summary>
+        /// <param name="facade">MatrixFacade to be encapsulated</param>
         public TimeDecorator(IMatrixFacade facade) : base(facade) { }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Transpose method of MatrixFacade instance.
+        /// </summary>
         public override void Transpose()
         {
             var stopwatch = new Stopwatch();
@@ -21,6 +38,12 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Determinant method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="det">Passed algorithm for determinant find.</param>
+        /// <returns>Matrix determinant.</returns>
         public override long Determinant(IFindDeterminant det)
         {
             var stopwatch = new Stopwatch();
@@ -31,6 +54,12 @@ namespace OOP_Lab_5.Decorators
             return ret;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Rank method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="rank">Passed algorithm for rank find.</param>
+        /// <returns>Matrix rank</returns>
         public override int Rank(IFindRank rank)
         {
             var stopwatch = new Stopwatch();
@@ -41,6 +70,11 @@ namespace OOP_Lab_5.Decorators
             return ret;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Square method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="mul">Passed algorithm for matrix multiply.</param>
         public override void Square(IMultiply mul)
         {
             var stopwatch = new Stopwatch();
@@ -50,6 +84,11 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Triangular method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="triangular">Passed algorithm for matrix triangular.</param>
         public override void Triangular(ITriangular triangular)
         {
             var stopwatch = new Stopwatch();
@@ -59,6 +98,11 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls MultiplyOnScalar method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="scalar">Scalar</param>
         public override void MultiplyOnScalar(long scalar)
         {
             var stopwatch = new Stopwatch();
@@ -68,6 +112,11 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls SaveToDb method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="id">Id of record.</param>
         public override void SaveToDb(string id)
         {
             var stopwatch = new Stopwatch();
@@ -78,6 +127,11 @@ namespace OOP_Lab_5.Decorators
 
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls LoadFromDb method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="id">Id of record.</param>
         public override void LoadFromDb(string id)
         {
             try
@@ -94,6 +148,11 @@ namespace OOP_Lab_5.Decorators
             }
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls ChangeSize method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="size">Size of matrix.</param>
         public override void ChangeSize(int size)
         {
             var stopwatch = new Stopwatch();
@@ -103,6 +162,11 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Copy method of MatrixFacade instance.
+        /// </summary>
+        /// <returns>Matrix copy.</returns>
         public override IPrototype Copy()
         {
             var stopwatch = new Stopwatch();
@@ -113,6 +177,11 @@ namespace OOP_Lab_5.Decorators
             return ret;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Paste method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="matrix">Matrix to be pasted.</param>
         public override void Paste(IPrototype matrix)
         {
             var stopwatch = new Stopwatch();
@@ -122,6 +191,10 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Undo method of MatrixFacade instance.
+        /// </summary>
         public override void Undo()
         {
             var stopwatch = new Stopwatch();
@@ -131,6 +204,12 @@ namespace OOP_Lab_5.Decorators
             Time = stopwatch.ElapsedMilliseconds;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Add method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="other">Other matrix to be added.</param>
+        /// <returns>New matrix that equals to adddition of this and other matrixes.</returns>
         public override Matrix Add(Matrix other)
         {
             var stopwatch = new Stopwatch();
@@ -141,6 +220,12 @@ namespace OOP_Lab_5.Decorators
             return ret;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Diff method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="other">Other matrix to be subtracted from this.</param>
+        /// <returns>New matrix that equals to substraction of this and other matrixes.</returns>
         public override Matrix Diff(Matrix other)
         {
             var stopwatch = new Stopwatch();
@@ -151,6 +236,13 @@ namespace OOP_Lab_5.Decorators
             return ret;
         }
 
+        /// <summary>
+        /// Measures the time of the algorithm.
+        /// Calls Multiply method of MatrixFacade instance.
+        /// </summary>
+        /// <param name="other">Other matrix to be multiplied to this.</param>
+        /// <param name="mul">Passed algorithm for matrix multiply.</param>
+        /// <returns>New matrix that equals to substraction of this and other matrixes.</returns>
         public override Matrix Multiply(Matrix other, IMultiply mul)
         {
             var stopwatch = new Stopwatch();
