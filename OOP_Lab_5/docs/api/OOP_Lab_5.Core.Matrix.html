@@ -1,0 +1,1414 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Matrix
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Matrix
+   ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OOP_Lab_5.Core.Matrix">
+  
+  
+  <h1 id="OOP_Lab_5_Core_Matrix" data-uid="OOP_Lab_5.Core.Matrix" class="text-break">Class Matrix
+  </h1>
+  <div class="markdown level0 summary"><p>Represents square matrix and basic operations with it.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Matrix</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><a class="xref" href="OOP_Lab_5.Core.Prototype.IPrototype.html">IPrototype</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OOP_Lab_5.Core.html">OOP_Lab_5.Core</a></h6>
+  <h6><strong>Assembly</strong>: OOP_Lab_5.dll</h6>
+  <h5 id="OOP_Lab_5_Core_Matrix_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Matrix : IEnumerable, IPrototype</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix__ctor_OOP_Lab_5_Core_Matrix_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.%23ctor(OOP_Lab_5.Core.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L113">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix__ctor_" data-uid="OOP_Lab_5.Core.Matrix.#ctor*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix__ctor_OOP_Lab_5_Core_Matrix_" data-uid="OOP_Lab_5.Core.Matrix.#ctor(OOP_Lab_5.Core.Matrix)">Matrix(Matrix)</h4>
+  <div class="markdown level1 summary"><p>Constructs matrix that equals to passed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix(Matrix other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>Other matrix, values of it are used to initialize this matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix__ctor_System_Collections_Generic_List_System_Collections_Generic_List_System_Int64___.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.%23ctor(System.Collections.Generic.List%7BSystem.Collections.Generic.List%7BSystem.Int64%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L79">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix__ctor_" data-uid="OOP_Lab_5.Core.Matrix.#ctor*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix__ctor_System_Collections_Generic_List_System_Collections_Generic_List_System_Int64___" data-uid="OOP_Lab_5.Core.Matrix.#ctor(System.Collections.Generic.List{System.Collections.Generic.List{System.Int64}})">Matrix(List&lt;List&lt;Int64&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs Matrix with passed 2d list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix(List&lt;List&lt;long&gt;&gt; matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;&gt;</td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>2d square list used to initialize matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L92">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix__ctor_" data-uid="OOP_Lab_5.Core.Matrix.#ctor*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix__ctor_System_Int32_" data-uid="OOP_Lab_5.Core.Matrix.#ctor(System.Int32)">Matrix(Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs square zero matrix with passed count of rows and columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix(int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Count of rows and columns to initialize matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix__ctor_System_Int64_0__0___.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.%23ctor(System.Int64%5B0%3A%2C0%3A%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L58">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix__ctor_" data-uid="OOP_Lab_5.Core.Matrix.#ctor*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix__ctor_System_Int64_0__0___" data-uid="OOP_Lab_5.Core.Matrix.#ctor(System.Int64[0:,0:])">Matrix(Int64[,])</h4>
+  <div class="markdown level1 summary"><p>Constructs Matrix with passed 2d array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix(long[, ] matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span>[,]</td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>2d square array used to initialize matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Count.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L24">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Count_" data-uid="OOP_Lab_5.Core.Matrix.Count*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Count" data-uid="OOP_Lab_5.Core.Matrix.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Count of rows and columns in matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_FindDeterminantAlgorithm.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.FindDeterminantAlgorithm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L31">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_FindDeterminantAlgorithm_" data-uid="OOP_Lab_5.Core.Matrix.FindDeterminantAlgorithm*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_FindDeterminantAlgorithm" data-uid="OOP_Lab_5.Core.Matrix.FindDeterminantAlgorithm">FindDeterminantAlgorithm</h4>
+  <div class="markdown level1 summary"><p>Find determinant algorithm.
+Used in FindDeterminant method.
+Implements strategy pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFindDeterminant FindDeterminantAlgorithm { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Algorithms.IFindDeterminant.html">IFindDeterminant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_FindRankAlgorithm.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.FindRankAlgorithm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L38">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_FindRankAlgorithm_" data-uid="OOP_Lab_5.Core.Matrix.FindRankAlgorithm*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_FindRankAlgorithm" data-uid="OOP_Lab_5.Core.Matrix.FindRankAlgorithm">FindRankAlgorithm</h4>
+  <div class="markdown level1 summary"><p>Find rank algorithm.
+Used in FindRank method.
+Implements strategy pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFindRank FindRankAlgorithm { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Algorithms.IFindRank.html">IFindRank</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Item_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Item(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L238">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Item_" data-uid="OOP_Lab_5.Core.Matrix.Item*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Item_System_Int32_System_Int32_" data-uid="OOP_Lab_5.Core.Matrix.Item(System.Int32,System.Int32)">Item[Int32, Int32]</h4>
+  <div class="markdown level1 summary"><p>Overloaded indexer operator.
+Gets access to element of matrix with indexes i and j.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long this[int i, int j] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">j</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_MultiplyAlgorithm.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.MultiplyAlgorithm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L52">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_MultiplyAlgorithm_" data-uid="OOP_Lab_5.Core.Matrix.MultiplyAlgorithm*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_MultiplyAlgorithm" data-uid="OOP_Lab_5.Core.Matrix.MultiplyAlgorithm">MultiplyAlgorithm</h4>
+  <div class="markdown level1 summary"><p>Triangular algorithm.
+Used in overloaded multiply operator and in Square method.
+Implements strategy pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMultiply MultiplyAlgorithm { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Algorithms.IMultiply.html">IMultiply</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_TriangularAlgorithm.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.TriangularAlgorithm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L45">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_TriangularAlgorithm_" data-uid="OOP_Lab_5.Core.Matrix.TriangularAlgorithm*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_TriangularAlgorithm" data-uid="OOP_Lab_5.Core.Matrix.TriangularAlgorithm">TriangularAlgorithm</h4>
+  <div class="markdown level1 summary"><p>Triangular algorithm.
+Used in Triangular method.
+Implements strategy pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITriangular TriangularAlgorithm { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Algorithms.ITriangular.html">ITriangular</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_ChangeCount_System_Int32_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.ChangeCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L357">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_ChangeCount_" data-uid="OOP_Lab_5.Core.Matrix.ChangeCount*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_ChangeCount_System_Int32_" data-uid="OOP_Lab_5.Core.Matrix.ChangeCount(System.Int32)">ChangeCount(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets new matrix with changed count of rows and columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix ChangeCount(int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Count of rows and columns in new matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix with changed count of rows and columns.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Clone.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L442">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Clone_" data-uid="OOP_Lab_5.Core.Matrix.Clone*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Clone" data-uid="OOP_Lab_5.Core.Matrix.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Gets prototype of this matrix.
+Uses prototype pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPrototype Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Prototype.IPrototype.html">IPrototype</a></td>
+        <td><p>Prototype of this matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_Clone_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+var prototype = matrix.Clone();
+var matrixCloned = (Matrix)prototype;</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L256">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Equals_" data-uid="OOP_Lab_5.Core.Matrix.Equals*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Equals_System_Object_" data-uid="OOP_Lab_5.Core.Matrix.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Overrided equals method.
+Checks, if this and passed object are equals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object otherObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">otherObject</span></td>
+        <td><p>Passed object will be checked, if it equals to this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if this and passed object are equals, false if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_FindDeterminant.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.FindDeterminant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L324">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_FindDeterminant_" data-uid="OOP_Lab_5.Core.Matrix.FindDeterminant*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_FindDeterminant" data-uid="OOP_Lab_5.Core.Matrix.FindDeterminant">FindDeterminant()</h4>
+  <div class="markdown level1 summary"><p>Finds determinant of this matrix.
+Uses strategy pattern and FindDeterminantAlgorithm variable.
+If FindDeterminantAlgorithm variable was not initialized or is null,
+it will be assigned with NativeFindDeterminant instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long FindDeterminant()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>Return determinant of matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_FindDeterminant_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+matrix.FindDeterminantAlgorithm = new LibraryFindDeterminant();
+var det = matrix.FindDeterminant();</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_FindRank.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.FindRank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L345">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_FindRank_" data-uid="OOP_Lab_5.Core.Matrix.FindRank*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_FindRank" data-uid="OOP_Lab_5.Core.Matrix.FindRank">FindRank()</h4>
+  <div class="markdown level1 summary"><p>Finds determinant of this matrix.
+Uses strategy pattern and FindRankAlgorithm variable.
+If FindRankAlgorithm variable was not initialized or is null,
+it will be assigned with NativeFindRank instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindRank()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Return rank of matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_FindRank_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+matrix.FindRankAlgorithm = new LibraryFindRank();
+var rank = matrix.FindRank();</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_GetArray.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.GetArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L296">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_GetArray_" data-uid="OOP_Lab_5.Core.Matrix.GetArray*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_GetArray" data-uid="OOP_Lab_5.Core.Matrix.GetArray">GetArray()</h4>
+  <div class="markdown level1 summary"><p>Gets 2d array with matrix elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long[, ] GetArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span>[,]</td>
+        <td><p>2d array with matrix elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_GetEnumerator.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L462">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_GetEnumerator_" data-uid="OOP_Lab_5.Core.Matrix.GetEnumerator*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_GetEnumerator" data-uid="OOP_Lab_5.Core.Matrix.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Gets enumenator of this matrix.
+It allows to use foreach loop with instances of this class.
+Uses iterator pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>Enumenator of this matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_GetEnumerator_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+foreach (element in matrix)
+{
+...
+}</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_GetHashCode.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L281">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_GetHashCode_" data-uid="OOP_Lab_5.Core.Matrix.GetHashCode*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_GetHashCode" data-uid="OOP_Lab_5.Core.Matrix.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Overrided GetHashCode method.
+<span class="xref">System.NotImplementedException</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Hash code of this object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_GetList.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.GetList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L290">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_GetList_" data-uid="OOP_Lab_5.Core.Matrix.GetList*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_GetList" data-uid="OOP_Lab_5.Core.Matrix.GetList">GetList()</h4>
+  <div class="markdown level1 summary"><p>Gets 2d list with matrix elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;long&gt;&gt; GetList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int64</span>&gt;&gt;</td>
+        <td><p>2d list with matrix elements</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Restore_OOP_Lab_5_Core_Memento_IMatrixMemento_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Restore(OOP_Lab_5.Core.Memento.IMatrixMemento)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L498">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Restore_" data-uid="OOP_Lab_5.Core.Matrix.Restore*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Restore_OOP_Lab_5_Core_Memento_IMatrixMemento_" data-uid="OOP_Lab_5.Core.Matrix.Restore(OOP_Lab_5.Core.Memento.IMatrixMemento)">Restore(IMatrixMemento)</h4>
+  <div class="markdown level1 summary"><p>Restores this matrix, using memento pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Restore(IMatrixMemento memento)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Memento.IMatrixMemento.html">IMatrixMemento</a></td>
+        <td><span class="parametername">memento</span></td>
+        <td><p>Memento instance to restore matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_Restore_OOP_Lab_5_Core_Memento_IMatrixMemento__examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+var matrixMemento = matrix.Save();
+...
+matrix.Restore(matrixMemento);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Save.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L480">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Save_" data-uid="OOP_Lab_5.Core.Matrix.Save*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Save" data-uid="OOP_Lab_5.Core.Matrix.Save">Save()</h4>
+  <div class="markdown level1 summary"><p>Gets memento of this matrix.
+Uses memento pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMatrixMemento Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Memento.IMatrixMemento.html">IMatrixMemento</a></td>
+        <td><p>Memento of this matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_Save_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+var matrixMemento = matrix.Save();
+...
+matrix.Restore(matrixMemento);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Square.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Square%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L425">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Square_" data-uid="OOP_Lab_5.Core.Matrix.Square*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Square" data-uid="OOP_Lab_5.Core.Matrix.Square">Square()</h4>
+  <div class="markdown level1 summary"><p>Gets new matrix that equals to this powered by two.
+Uses strategy pattern and MultiplyAlgorithm variable.
+If MultiplyAlgorithm variable was not initialized or is null,
+it will be assigned with NativeMultiply instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix Square()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to this powered by two.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_Square_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+matrix.MultiplyAlgorithm = new LibraryMultiply();
+var squareMatrix = matrix.Square();</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Transpose.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Transpose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L396">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Transpose_" data-uid="OOP_Lab_5.Core.Matrix.Transpose*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Transpose" data-uid="OOP_Lab_5.Core.Matrix.Transpose">Transpose()</h4>
+  <div class="markdown level1 summary"><p>Gets new transposed matrix of this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix Transpose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New transposed matrix of this.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_Triangular.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.Triangular%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L384">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_Triangular_" data-uid="OOP_Lab_5.Core.Matrix.Triangular*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_Triangular" data-uid="OOP_Lab_5.Core.Matrix.Triangular">Triangular()</h4>
+  <div class="markdown level1 summary"><p>Gets new triangular matrix of this.
+Uses strategy pattern and TriangularAlgorithm variable.
+If TriangularAlgorithm variable was not initialized or is null,
+it will be assigned with NativeTriangular instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix Triangular()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New triangular matrix based on this.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OOP_Lab_5_Core_Matrix_Triangular_examples">Examples</h5>
+  <pre><code>var matrix = new Matrix(...);
+matrix.TriangularAlgorithm = new LibraryTriangular();
+var triangularMatrix = matrix.FindTriangular();</code></pre>
+
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_op_Addition_OOP_Lab_5_Core_Matrix_OOP_Lab_5_Core_Matrix_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.op_Addition(OOP_Lab_5.Core.Matrix%2COOP_Lab_5.Core.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L154">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_op_Addition_" data-uid="OOP_Lab_5.Core.Matrix.op_Addition*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_op_Addition_OOP_Lab_5_Core_Matrix_OOP_Lab_5_Core_Matrix_" data-uid="OOP_Lab_5.Core.Matrix.op_Addition(OOP_Lab_5.Core.Matrix,OOP_Lab_5.Core.Matrix)">Addition(Matrix, Matrix)</h4>
+  <div class="markdown level1 summary"><p>Overloaded binary addition operator.
+Gets new matrix that equals to addition of passed matrixes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix operator +(Matrix left, Matrix right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left matrix argument of matrix addition operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right matrix argument of matrix addition operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to addition of passed matrixes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_op_Multiply_OOP_Lab_5_Core_Matrix_OOP_Lab_5_Core_Matrix_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.op_Multiply(OOP_Lab_5.Core.Matrix%2COOP_Lab_5.Core.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L192">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_op_Multiply_" data-uid="OOP_Lab_5.Core.Matrix.op_Multiply*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_op_Multiply_OOP_Lab_5_Core_Matrix_OOP_Lab_5_Core_Matrix_" data-uid="OOP_Lab_5.Core.Matrix.op_Multiply(OOP_Lab_5.Core.Matrix,OOP_Lab_5.Core.Matrix)">Multiply(Matrix, Matrix)</h4>
+  <div class="markdown level1 summary"><p>Overloaded multiplication operator.
+Gets new matrix that equals to multiplication of passed matrixes.
+Uses strategy pattern and MultiplyAlgorithm variable.
+If MultiplyAlgorithm variable was not initialized or is null,
+it will be assigned with NativeMultiply instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix operator *(Matrix left, Matrix right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left matrix argument of matrix multiplication operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right matrix argument of matrix multiplication operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to multiplication of passed matrixes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_op_Multiply_OOP_Lab_5_Core_Matrix_System_Int64_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.op_Multiply(OOP_Lab_5.Core.Matrix%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L206">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_op_Multiply_" data-uid="OOP_Lab_5.Core.Matrix.op_Multiply*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_op_Multiply_OOP_Lab_5_Core_Matrix_System_Int64_" data-uid="OOP_Lab_5.Core.Matrix.op_Multiply(OOP_Lab_5.Core.Matrix,System.Int64)">Multiply(Matrix, Int64)</h4>
+  <div class="markdown level1 summary"><p>Overloaded multiplication operator.
+Gets new matrix that equals to passed matrix multiplicated by passed scalar value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix operator *(Matrix left, long right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left matrix argument of matrix multiplication on scalar operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to passed matrix multiplicated by passed scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_op_Multiply_System_Int64_OOP_Lab_5_Core_Matrix_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.op_Multiply(System.Int64%2COOP_Lab_5.Core.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L226">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_op_Multiply_" data-uid="OOP_Lab_5.Core.Matrix.op_Multiply*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_op_Multiply_System_Int64_OOP_Lab_5_Core_Matrix_" data-uid="OOP_Lab_5.Core.Matrix.op_Multiply(System.Int64,OOP_Lab_5.Core.Matrix)">Multiply(Int64, Matrix)</h4>
+  <div class="markdown level1 summary"><p>Overloaded multiplication operator.
+Gets new matrix that equals to passed matrix multiplicated by passed scalar value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix operator *(long left, Matrix right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Scalar value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Left matrix argument of matrix multiplication on scalar operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to passed matrix multiplicated by passed scalar value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_op_Subtraction_OOP_Lab_5_Core_Matrix_OOP_Lab_5_Core_Matrix_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.op_Subtraction(OOP_Lab_5.Core.Matrix%2COOP_Lab_5.Core.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L177">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_op_Subtraction_" data-uid="OOP_Lab_5.Core.Matrix.op_Subtraction*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_op_Subtraction_OOP_Lab_5_Core_Matrix_OOP_Lab_5_Core_Matrix_" data-uid="OOP_Lab_5.Core.Matrix.op_Subtraction(OOP_Lab_5.Core.Matrix,OOP_Lab_5.Core.Matrix)">Subtraction(Matrix, Matrix)</h4>
+  <div class="markdown level1 summary"><p>Overloaded binary subtraction operator.
+Gets new matrix that equals to subtraction of passed matrixes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix operator -(Matrix left, Matrix right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left matrix argument of matrix subtraction operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right matrix argument of matrix subtraction operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to subtraction of passed matrixes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix_op_UnaryNegation_OOP_Lab_5_Core_Matrix_.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix.op_UnaryNegation(OOP_Lab_5.Core.Matrix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L134">View Source</a>
+  </span>
+  <a id="OOP_Lab_5_Core_Matrix_op_UnaryNegation_" data-uid="OOP_Lab_5.Core.Matrix.op_UnaryNegation*"></a>
+  <h4 id="OOP_Lab_5_Core_Matrix_op_UnaryNegation_OOP_Lab_5_Core_Matrix_" data-uid="OOP_Lab_5.Core.Matrix.op_UnaryNegation(OOP_Lab_5.Core.Matrix)">UnaryNegation(Matrix)</h4>
+  <div class="markdown level1 summary"><p>Overloaded unary subtraction operator.
+Gets new matrix that equals to passed matrix multiplied by -1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix operator -(Matrix matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>Matrix argument that will be multiplied by -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OOP_Lab_5.Core.Matrix.html">Matrix</a></td>
+        <td><p>New matrix that equals to passed matrix multiplied by -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <a class="xref" href="OOP_Lab_5.Core.Prototype.IPrototype.html">IPrototype</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/new/master/apiSpec/new?filename=OOP_Lab_5_Core_Matrix.md&amp;value=---%0Auid%3A%20OOP_Lab_5.Core.Matrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DoctorMatt47/OOP_Lab_5/blob/master/OOP_Lab_5/src/Core/Matrix.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

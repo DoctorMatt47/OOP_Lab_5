@@ -1,0 +1,492 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Docto/source/repos/OOP_Lab_5/OOP_Lab_5",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.IFindDeterminant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.IFindDeterminant.html",
+          "hash": "432iragkTegj6pCkOC4lA3V6L1ogAZwwaEg5a3cNT6M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.IFindRank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.IFindRank.html",
+          "hash": "M9rpbhLF+hcGj3JP3Ae+0TbENyk47R6FfFdLjx3aNBg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.IMultiply.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.IMultiply.html",
+          "hash": "d0Sch+XUmnUjq0AZtHaQ3Ea/jA6kQSEvJNjz3jVAqOk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.ITriangular.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.ITriangular.html",
+          "hash": "A4PD3pwJy+NDLQ3v/YuTTSzmHaPrnooXfqTWmOzFn+M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryFindDeterminant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryFindDeterminant.html",
+          "hash": "BZTlPHaO7qgHP5o8Kpj7U6+BAxd7P6R/d9v1K41IeSQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryFindRank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryFindRank.html",
+          "hash": "tZ7kMdxPY9l5QkWSVcFrEawC8F40O2JaKGda+gSZQOg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryMultiply.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryMultiply.html",
+          "hash": "xReZMl7QsW3z48cCSYjO5CWYjFRvRTfov55XErrz9wo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryTriangular.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.LibraryTriangular.html",
+          "hash": "rWIbNkyaLAYRsV7ZCEkrvRwmaqmmo/KdplzA0y33Eks="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeFindDeterminant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeFindDeterminant.html",
+          "hash": "JTTIS08ZzszOliBJ38ItmOq70c+y3OScs9NnKit25g4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeFindRank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeFindRank.html",
+          "hash": "asUdd1Upd3H55AhMN00Wx+o3Ns9q7RBM0glaZJ29foQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeMultiply.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeMultiply.html",
+          "hash": "egtyybP+oKNdznpBrkc72H3vGq4GLWWSTFpMg7M6vk4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeTriangular.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.NativeTriangular.html",
+          "hash": "Wq4FD3V6a6DQcCAy91Xrxx1B6PIJa7H290jZJICJaNk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Algorithms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Algorithms.html",
+          "hash": "bqVrop+TY7XrN6OrnztyFogiz1I73Nt29nDsHBfdIZo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Iterators.MatrixEnumenator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Iterators.MatrixEnumenator.html",
+          "hash": "uwYTELfEpR2zKJvo7uNaxoygLlKM3M5FrwadvU0i3Pw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Iterators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Iterators.html",
+          "hash": "IQURwQIU7idDYJ7PuUsjHeInaAXut6iCmkR9l/r0UzU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Matrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Matrix.html",
+          "hash": "D/vlVuAujccMK1SWNw4qqsoZ/z9TQpbQAPjfyTTsdGg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Memento.IMatrixMemento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Memento.IMatrixMemento.html",
+          "hash": "imE0drmWUakIVhSsdhD9EKKxXQiyazKIaToaIx6tkiU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Memento.MatrixHistory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Memento.MatrixHistory.html",
+          "hash": "SOUjrE2M1W7Uf166Zx3ipARNSsfpGRU1ZUPvSQ36ebQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Memento.MatrixMemento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Memento.MatrixMemento.html",
+          "hash": "E2nYDAqU3pXnBJEhRI16jz2ZbijNnjadfCOZIMuMD/o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Memento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Memento.html",
+          "hash": "wxP2uqm5MegDGaNnX5rAEu8uvfsUeD4dbgy5I1ZWxbw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Prototype.IPrototype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Prototype.IPrototype.html",
+          "hash": "Pc3J94CKkWckHK2/ASif/f4M/Xy4a4DbqvClknEMuNk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.Prototype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.Prototype.html",
+          "hash": "a86Rd3Sp3PGaz9vAtixOzvNBKheyacVzj6fxbRR8eiQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Core.html",
+          "hash": "29uoIlsvWCtOOkJCQfKamR2lbi6T/0WRA2/kizB1fwg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Data.DatabaseContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Data.DatabaseContext.html",
+          "hash": "6PVNOIKMXLgZ/ZA7TPeBJza7VC2EAQSTXk8A2hkIMkg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Data.Entities.BaseEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Data.Entities.BaseEntity-1.html",
+          "hash": "v392DlOaQftaTih3HHgqdinqDL8xBzhL0uAFfbJ+Kc4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Data.Entities.MatrixEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Data.Entities.MatrixEntity.html",
+          "hash": "ttKtnYZpULZitoP7XDXXkOKzGbT3U9d7d6hFL7dcrz4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Data.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Data.Entities.html",
+          "hash": "IriNQOos4/wsOPPz4JVHZblMP9XRC0WzkTJQ5U7rtHA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Data.html",
+          "hash": "0VyeUpIxqKUp1pAkctzhNbusUnIsYjoUXeTZkXhhVOI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Decorators.MatrixFacadeDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Decorators.MatrixFacadeDecorator.html",
+          "hash": "FWrteVIM/tZDIe9TB4JB42zuo0N+6brievBx2QL9ppc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Decorators.TimeDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Decorators.TimeDecorator.html",
+          "hash": "XO+w4M6VJkefDEn/CwNRWv6vrY2wedWnFlgira+i3tA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Decorators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Decorators.html",
+          "hash": "bbKMxMBleBBUvHqSIzkimReGHDPirUOVivxukBULxgk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Facade.IMatrixFacade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Facade.IMatrixFacade.html",
+          "hash": "9rj38VEwqX6s0bg8Zdr9Hb1/hMZiItM8TgB8DMDyjLk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Facade.MatrixFacade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Facade.MatrixFacade.html",
+          "hash": "imv/SfpTh37pjh8Q2QJkKJwlgm705J1FWYayXgQXW4k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Facade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Facade.html",
+          "hash": "tS+2kUNzcNEYAaq6YELUinNjMcNRuNxUUANagmA+yLs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.Form.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.Form.html",
+          "hash": "Cw3ECO75KZVe7xmob8/7BzFkKMrLKMI6H1LyFsdDBns="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OOP_Lab_5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OOP_Lab_5.html",
+          "hash": "CBwVg3MLO83SqxOjAYC0fJ+oFf9F30bmCHgr+ib7LL4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "gUlZ2QurFe6Gdac7aSfkgGXRchOWIJ4XIlgK3Xis4fE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 36,
+          "skipped_file_count": 36
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
